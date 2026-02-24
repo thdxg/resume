@@ -12,23 +12,23 @@ personal:
       url: https://github.com/thdxg
 
 education:
+  - institution: Columbia University
+    area: Computer Science
+    studyType: MS
+    startDate: 2026-08-01
+    endDate: 2028-05-01
+    location: New York, NY
   - institution: Emory University
     area: Computer Science
-    studyType: Bachelor of Science
+    studyType: BS
     startDate: 2023-08-01
     endDate: 2026-05-01
     location: Atlanta, GA
     honors:
-      - 3.99 GPA
+      - 4.0 GPA
+      - Summa Cum Laude (expected)
       - 2x James T Laney Scholarship
       - 5x Dean's List
-    courses:
-      - Computer Architecture
-      - Systems Programming
-      - Algorithm Analysis
-      # - Machine Learning
-      - Cryptography
-      - Database Systems
 
 work:
   - position: Software Engineering Intern (Cloud Infrastructure)
@@ -40,7 +40,7 @@ work:
       - Developed an internal REST API in Go to aggregate real-time network health of on-premise MongoDB, MySQL, and RabbitMQ VMs across 4 distinct datacenters, using Docker, OpenTelemetry, Prometheus, BOSH, and OpenStack
       - Deployed a Kubernetes CronJob for monitoring TLS certificate expiry to provide observability during certificate renewal
       - Provisioned synthetic testing probes with Terraform and deployed Grafana BlackBox exporters to enhance observability
-      - Applied CI/CD and GitOps principle using ArgoCD and GitHub Actions to fully automate container build and deployment
+      # - Applied CI/CD and GitOps principle using ArgoCD and GitHub Actions to fully automate container build and deployment
   - position: Software Engineering Intern
     organization: eStreamly
     location: Atlanta, GA
@@ -56,7 +56,7 @@ work:
     startDate: 2023-11-01
     endDate: 2025-12-01
     highlights:
-      - Co-authored a HCI paper accepted to ACM CHI 2026 exploring personal informatics through music consumption
+      - Co-authored a HCI paper accepted to ACM CHI 2026 on quantified-self personal informatics through music consumption
       - Aggregated 100+ GB of streaming history data from 60 Spotify users using Python for comprehensive statistical analysis
       # - Created interactive web data visualizations using React and d3.js, enabling dynamic exploration of music streaming history
   - position: Software Engineering Intern
@@ -66,7 +66,7 @@ work:
     endDate: 2024-04-01
     highlights:
       - Developed a gamified coding education web app, integrating 3D games and a LLM chatbots into the frontend using Next.js
-      - Utilized a diverse stack of 30+ widely-used TypeScript libraries, including AWS Amplify, Auth0, Express.js, AI SDK, and MUI
+      # - Utilized a diverse stack of 30+ widely-used TypeScript libraries, including AWS Amplify, Auth0, Express.js, AI SDK, and MUI
 
 projects:
   - name: "Huddle: RAG-based Surety Solution"
@@ -77,7 +77,7 @@ projects:
       - Created a SaaS platform to streamline collaboration between surety contractors and agents, funded by Emory Hatchery
       - Architected an event-driven RAG pipeline using Temporal to asynchorously parse and generate bid bond documents
       - Delivered 10+ product demos and customer interviews, leading to a \$10K funding round and early product validation
-  - name: "Overburrow: Kubernetes Homelab"
+  - name: "Kubernetes Homelab"
     startDate: 2025-07-01
     endDate: present
     link: https://overburrow.org
