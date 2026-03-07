@@ -170,7 +170,12 @@
             *#edu.institution* #h(1fr) *#edu.location* \
           ]
           #if ("area" in edu) and (edu.area != none) [
-            #text(style: "italic")[#edu.studyType in #edu.area] #h(1fr)
+            #let degree-str = if type(edu.area) == array {
+              edu.area.map(a => a.studyType + " in " + a.name).join(", ")
+            } else {
+              edu.studyType + " in " + edu.area
+            }
+            #text(style: "italic")[#degree-str] #h(1fr)
           ] else [
             #text(style: "italic")[#edu.studyType] #h(1fr)
           ]
