@@ -12,12 +12,12 @@ personal:
       url: https://github.com/thdxg
 
 education:
-  - institution: Columbia University
-    area: Computer Science
-    studyType: MS
+  - institution: Carnegie Mellon University
+    area: Software Engineering (Scalable Systems)
+    studyType: Master
     startDate: 2026-08-01
     endDate: 2028-05-01
-    location: New York, NY
+    location: Pittsburgh, PA
   - institution: Emory University
     area:
       - studyType: BS
