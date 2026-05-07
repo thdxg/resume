@@ -37,7 +37,7 @@ education:
 
 work:
   - position: Founding Engineer
-    organization: Huddle Surety
+    organization: Huddle Surety (Techstars Pre-Accelerator)
     location: Atlanta, GA
     startDate: 2025-09-01
     endDate: present
@@ -60,7 +60,7 @@ work:
     startDate: 2024-06-01
     endDate: 2024-08-01
     highlights:
-      - Optimized global state management in video streaming UI with TypeScript and Angular, reducing page load time by 40%
+      - Optimized global state management and caching in frontend with TypeScript and Angular, reducing page load time by 40%
       - Managed Docker image release pipelines on GCP Cloud Build, automating deployment processes and reducing release time
   - position: Research Assistant in HCI
     organization: Emory University CAV Lab
@@ -68,7 +68,7 @@ work:
     startDate: 2023-11-01
     endDate: 2025-12-01
     highlights:
-      - Published to ACM CHI 2026 on user engagement with passively-collected music listening data for personal informatics
+      - Published in ACM CHI 2026 modeling user listening behaviors through personal informatics and music streaming data
       - Aggregated 100+ GB of streaming history from 60 Spotify users using Python for comprehensive analysis and visualization
 
 projects:
@@ -84,7 +84,7 @@ projects:
     endDate: present
     link: https://github.com/overburrow
     highlights:
-      - Architected a bare-metal K3s cluster on two Raspberry Pis, utilizing Ansible for idempotent node provisioning, Cilium for cluster networking with Gateway API, ArgoCD for declarative GitOps workflow, and Prometheus for observability
+      - Architected a bare-metal K3s cluster on two Raspberry Pis, utilizing Ansible for idempotent node provisioning, Cilium for cluster networking with Gateway API, ArgoCD for declarative GitOps workflow, and Prometheus for metrics observability
       - Engineered a hybrid networking mesh combining Cilium CNI with Tailscale VPN as the underlay transport and solved complex MTU fragmentation issues by implementing custom packet clamping rules to bypass standard VXLAN encapsulation
   - name: "Emory Hacks: Emory University's Student-Run Hackathon"
     startDate: 2024-09-01
@@ -100,10 +100,10 @@ skills:
       - Go
       - JavaScript
       - TypeScript
-      - Java
-      - Python
       - C
       - Rust
+      - Java
+      - Python
       - SQL
       - HTML
       - CSS
