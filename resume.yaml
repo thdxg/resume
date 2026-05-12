@@ -14,8 +14,8 @@ personal:
 education:
   - institution: Carnegie Mellon University
     area:
-      - studyType: Master
-        name: Software Engineering (Scalable Systems)
+      - studyType: MS
+        name: Computer Science
     startDate: 2026-08-01
     endDate: 2028-05-01
     location: Pittsburgh, PA
