@@ -44,7 +44,7 @@ work:
     highlights:
       - Architected a multi-tenant polyglot microservices platform using Go and Python, orchestrating complex distributed data transaction state machines via Temporal to guarantee strict transactional atomicity across all application deployments
       - Engineered a multi-stage RAG pipeline leveraging pgvector and semantic search to parse complex legal documents, increasing processing accuracy to 95% and automating 90% of manual underwriting workflows in surety agencies
-      - Deployed containers on high-availability infrastructure monitored by the LGTM stack, maintaining 99% production uptime
+      - Provisioned a high-availability cloud infrastructure monitored by the LGTM stack, maintaining 99% uptime in production
   - position: Software Engineering Intern (Cloud Infrastructure)
     organization: UKG
     location: Atlanta, GA
