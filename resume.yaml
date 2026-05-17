@@ -23,13 +23,13 @@ education:
     area:
       - studyType: BS
         name: Computer Science
-      - studyType: BS
-        name: Psychology
+      # - studyType: BS
+      #   name: Psychology
     startDate: 2023-08-01
     endDate: 2026-05-01
     location: Atlanta, GA
     honors:
-      - 4.0 GPA
+      - 3.99/4.0 GPA
       - Summa Cum Laude
       - 2x James T Laney Scholarship
       - 5x Dean's List
@@ -42,64 +42,69 @@ work:
     startDate: 2025-09-01
     endDate: present
     highlights:
-      - Architected a multi-tenant, polyglot SaaS for surety bond processing with Go, Next.js, and Python orchestrated via Temporal
-      - Built a multi-stage RAG pipeline using Python and pgvector, achieving 95% accuracy and 90% manual processing reduction
-      - Deployed a highly available container-based microservices architecture with LGTM stack observability, ensuring 99% uptime
+      - Architected a multi-tenant polyglot microservices platform using Go and Python, orchestrating complex distributed data transaction state machines via Temporal to guarantee strict transactional atomicity across all application deployments
+      - Engineered a multi-stage RAG pipeline leveraging pgvector and semantic search to parse complex legal documents, increasing processing accuracy to 95% and automating 90% of manual underwriting workflows in surety agencies
+      - Deployed containers on high-availability infrastructure monitored by the LGTM stack, maintaining 99% production uptime
   - position: Software Engineering Intern (Cloud Infrastructure)
     organization: UKG
     location: Atlanta, GA
     startDate: 2025-05-01
     endDate: 2025-08-01
     highlights:
-      - Developed a production-grade REST API in Go to efficiently aggregate real-time network health of on-premise MongoDB, MySQL, and RabbitMQ VM deployments across 4 datacenters in the US using Docker, OpenTelemetry, and Prometheus
-      - Automated TLS certificate lifecycle monitoring via Kubernetes CronJob, accelerating annual renewal process by 70%
-      - Implemented distributed network observability by provisioning Prometheus Blackbox Exporters across OpenStack tenants
-  - position: Software Engineering Intern
+      - Developed a production-grade REST API in Go utilizing a producer-consumer worker pool to concurrently aggregate the real-time network health of 200+ MongoDB, MySQL, and RabbitMQ VM deployments across 4 geodistributed datacenters
+      - Automated TLS certificate validation lifecycle via Kubernetes CronJobs, accelerating the biannual renewal process by 70%
+      - Implemented distributed observability by provisioning Prometheus Blackbox Exporters across isolated OpenStack tenants
+  - position: Software Engineering Intern (Full Stack)
     organization: eStreamly
     location: Atlanta, GA
     startDate: 2024-06-01
     endDate: 2024-08-01
     highlights:
-      - Optimized global state management and caching in frontend with TypeScript and Angular, reducing page load time by 40%
-      - Managed Docker image release pipelines on GCP Cloud Build, automating deployment processes and reducing release time
-  - position: Research Assistant in HCI
-    organization: Emory University CAV Lab
-    location: Atlanta, GA
-    startDate: 2023-11-01
-    endDate: 2025-12-01
-    highlights:
-      - Published in ACM CHI 2026 modeling user listening behaviors through personal informatics and music streaming data
-      - Aggregated 100+ GB of streaming history from 60 Spotify users using Python for comprehensive analysis and visualization
+      - Optimized global state management and client-side caching using TypeScript and Angular, reducing page latency by 40%
+      - Automated container image release pipelines utilizing GCP Cloud Build, streamlining CI/CD and reducing production time
 
 projects:
-  - name: "Kubernetes Open-Source Contribution"
-    startDate: 2026-01-01
-    endDate: present
-    link: https://kubernetes.io
+  - name: "Spotify Warped: HCI Research & Publication"
+    startDate: 2023-11-01
+    endDate: 2025-12-01
+    link: https://dl.acm.org/doi/10.1145/3772318.3790875
     highlights:
-      - Contributed to Kubernetes open-source project as an active member of the SIG Docs, specializing in internationalization
-      - Localized documentation on Kubernetes scheduler concepts, ensuring terminology accuracy and clarity for Korean audiences
+      - Co-authored and published at ACM CHI 2026, architecting scalable data aggregation systems to analyze how computational feedback loops and algorithmic tracking metrics influence automated user engagement patterns across digital media
+      - Built high-throughput data processing pipelines in Python to ingest and analyze 100 GB of granular Spotify streaming logs
   - name: "Kubernetes Homelab"
     startDate: 2025-07-01
     endDate: present
     link: https://github.com/overburrow
     highlights:
-      - Architected a bare-metal K3s cluster on two Raspberry Pis, utilizing Ansible for idempotent node provisioning, Cilium for cluster networking with Gateway API, ArgoCD for declarative GitOps workflow, and Prometheus for metrics observability
-      - Engineered a hybrid networking mesh combining Cilium CNI with Tailscale VPN as the underlay transport and solved complex MTU fragmentation issues by implementing custom packet clamping rules to bypass standard VXLAN encapsulation
-  - name: "Emory Hacks: Emory University's Student-Run Hackathon"
-    startDate: 2024-09-01
+      - Architected a bare-metal K3s cluster using Ansible for provisioning and ArgoCD for declarative GitOps deployment
+      - Configured Cilium CNI as a complete kube-proxy replacement to optimize cluster performance, leveraging Kubernetes Gateway API to implement fine-grained traffic routing through isolated public and private entry points across nodes
+  - name: "Macterm: Native MacOS Terminal Emulator"
+    startDate: 2026-04-01
     endDate: present
+    link: https://github.com/thdxg/macterm
+    highlights:
+      - Built a native macOS terminal in SwiftUI on top of libghostty with comprehensive multiplexing, earning 200+ GitHub stars
+      - Designed an end-to-end agentic workflow with custom commands and skills for development, issue triage, and releases
+  - name: "Emory Hacks: Emory University's Hackathon Organization"
+    startDate: 2024-09-01
+    endDate: 2026-05-01
     link: https://emoryhacks.com
     highlights:
-      - Co-founded Emory's first hackathon organization and developed annual hackathon website using Next.js and TypeScript
-      - Secured 200+ participants and sponsorships of \$20K+ from major firms including JPMorgan, Hyundai, and WolframAlpha
+      - Co-founded and developed annual hackathon website, attracting 300+ participants and \$20K+ sponsorship over 2 years
+  # - name: "Kubernetes Open-Source Contribution"
+  #   startDate: 2026-01-01
+  #   endDate: present
+  #   link: https://kubernetes.io
+  #   highlights:
+  #     - Contributed to Kubernetes open-source project as an active member of the SIG Docs, specializing in internationalization
+  #     - Localized documentation on Kubernetes scheduler concepts, ensuring terminology accuracy and clarity for Korean audiences
 
 skills:
   - category: Languages
     skills:
       - Go
-      - JavaScript
       - TypeScript
+      - JavaScript
       - C
       - Rust
       - Java
@@ -108,10 +113,10 @@ skills:
       - HTML
       - CSS
       - Bash
-      - Nushell
-      - Typst
-      - LaTeX
-  - category: Cloud-Native Technologies
+      # - Nushell
+      # - Typst
+      # - LaTeX
+  - category: Technologies
     skills:
       - Kubernetes
       - Linux
@@ -122,8 +127,8 @@ skills:
       - Prometheus
       - OpenTelemetry
       - Grafana
-  - category: Tools
-    skills:
+      # - category: Tools
+      #   skills:
       - Git
       - AWS (S3, Lambda, Cloudfront)
       - GCP (Cloud Run, AlloyDB)
