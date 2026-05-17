@@ -36,24 +36,24 @@ education:
       - Phi Beta Kappa honor society
 
 work:
-  - position: Founding Engineer
+  - position: Founding Engineer & CTO
     organization: Huddle Surety (Techstars Pre-Accelerator)
     location: Atlanta, GA
     startDate: 2025-09-01
     endDate: present
     highlights:
-      - Architected a multi-tenant polyglot microservices platform using Go and Python, orchestrating complex distributed data transaction state machines via Temporal to guarantee strict transactional atomicity across all application deployments
-      - Engineered a multi-stage RAG pipeline leveraging pgvector and semantic search to parse complex legal documents, increasing processing accuracy to 95% and automating 90% of manual underwriting workflows in surety agencies
-      - Provisioned a high-availability cloud infrastructure monitored by the LGTM stack, maintaining 99% uptime in production
+      - Architected a multi-tenant microservices platform in Go, TypeScript, and Python, using Temporal workflows to enforce transactional consistency across distributed deployments
+      - Built a multi-stage RAG pipeline using pgvector to extract and classify surety bond documents, achieving 95% parsing accuracy and reducing bond issuance from 1 hour to under 5 minutes
+      - Processed 500+ bond documents across tenants, maintaining 99% uptime on AWS and Railway with observability via Prometheus, OpenTelemetry, and Grafana
   - position: Software Engineering Intern (Cloud Infrastructure)
     organization: UKG
     location: Atlanta, GA
     startDate: 2025-05-01
     endDate: 2025-08-01
     highlights:
-      - Developed a production-grade REST API in Go utilizing a producer-consumer worker pool to concurrently aggregate the real-time network health of 200+ MongoDB, MySQL, and RabbitMQ VM deployments across 4 geodistributed datacenters
-      - Automated TLS certificate validation lifecycle via Kubernetes CronJobs, accelerating the biannual renewal process by 70%
-      - Implemented distributed observability by provisioning Prometheus Blackbox Exporters across isolated OpenStack tenants
+      - Developed a REST API in Go utilizing a producer-consumer worker pool to concurrently aggregate the real-time network health of 200+ MongoDB, MySQL, and RabbitMQ VM deployments across 4 geodistributed datacenters
+      - Implemented a TLS certificate validator using Kubernetes CronJobs, accelerating the biannual renewal process by 70%
+      - Provisioned Prometheus Blackbox Exporters across isolated OpenStack tenants to achieve distributed observability
   - position: Software Engineering Intern (Full Stack)
     organization: eStreamly
     location: Atlanta, GA
@@ -61,7 +61,7 @@ work:
     endDate: 2024-08-01
     highlights:
       - Optimized global state management and client-side caching using TypeScript and Angular, reducing page latency by 40%
-      - Automated container image release pipelines utilizing GCP Cloud Build, streamlining CI/CD and reducing production time
+      - Implemented multi-stage container build and release pipeline on GCP Cloud Build, improving deployment speed by 30%
 
 projects:
   - name: "Spotify Warped: HCI Research & Publication"
@@ -69,28 +69,29 @@ projects:
     endDate: 2025-12-01
     link: https://dl.acm.org/doi/10.1145/3772318.3790875
     highlights:
-      - Co-authored and published at ACM CHI 2026, architecting scalable data aggregation systems to analyze how computational feedback loops and algorithmic tracking metrics influence automated user engagement patterns across digital media
-      - Built high-throughput data processing pipelines in Python to ingest and analyze 100 GB of granular Spotify streaming logs
+      - Co-authored and published at ACM CHI 2026 on how Spotify's algorithmic feedback loops shape user listening behavior
+      - Built high-throughput data processing pipelines in Python to ingest and analyze 100 GB of Spotify streaming data
   - name: "Kubernetes Homelab"
     startDate: 2025-07-01
     endDate: present
     link: https://github.com/overburrow
     highlights:
-      - Architected a bare-metal K3s cluster using Ansible for provisioning and ArgoCD for declarative GitOps deployment
-      - Configured Cilium CNI as a complete kube-proxy replacement to optimize cluster performance, leveraging Kubernetes Gateway API to implement fine-grained traffic routing through isolated public and private entry points across nodes
+      - Architected a bare-metal 3-node K3s cluster using Ansible for provisioning and ArgoCD for declarative GitOps
+      - Configured Cilium CNI as a kube-proxy replacement and implemented Gateway API routing for public and private ingress
   - name: "Macterm: Native MacOS Terminal Emulator"
     startDate: 2026-04-01
     endDate: present
     link: https://github.com/thdxg/macterm
     highlights:
-      - Built a native macOS terminal in SwiftUI on top of libghostty with comprehensive multiplexing, earning 200+ GitHub stars
-      - Designed an end-to-end agentic workflow with custom commands and skills for development, issue triage, and releases
+      - Built a macOS terminal in SwiftUI on top of libghostty capable of persistent multiplexing, earning 200+ GitHub stars
+      - Designed an agentic development workflow with Claude, implementing custom tools to automate issue triage and release
   - name: "Emory Hacks: Emory University's Hackathon Organization"
     startDate: 2024-09-01
     endDate: 2026-05-01
     link: https://emoryhacks.com
     highlights:
-      - Co-founded and developed annual hackathon website, attracting 300+ participants and \$20K+ sponsorship over 2 years
+      - Co-founded Emory's first hackathon organization and attracted 300+ participants and \$20K+ sponsorship over 2 years
+      - Developed annual hackathon website using Next.js and TypeScript with a registration system using PostgreSQL
   # - name: "Kubernetes Open-Source Contribution"
   #   startDate: 2026-01-01
   #   endDate: present
@@ -104,35 +105,25 @@ skills:
     skills:
       - Go
       - TypeScript
-      - JavaScript
       - C
       - Rust
       - Java
       - Python
       - SQL
-      - HTML
-      - CSS
-      - Bash
-      # - Nushell
-      # - Typst
-      # - LaTeX
   - category: Technologies
     skills:
       - Kubernetes
       - Linux
       - Docker
+      - AWS
+      - GCP
+      - Cloudflare
       - Helm
-      - ArgoCD
-      - Ansible
+      # - ArgoCD
+      # - Ansible
       - Prometheus
       - OpenTelemetry
-      - Grafana
-      # - category: Tools
-      #   skills:
-      - Git
-      - AWS (S3, Lambda, Cloudfront)
-      - GCP (Cloud Run, AlloyDB)
-      - Cloudflare (Workers, R2)
+      # - Grafana
       - Redis
-      - SQLite
+      # - SQLite
       - PostgreSQL

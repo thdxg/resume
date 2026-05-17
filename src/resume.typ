@@ -4,7 +4,7 @@
 
 #let uservars = (
   paper: "us-letter",
-  margin: 0.4in,
+  margin: 0.5in,
   headingfont: "Charter",
   bodyfont: "Charter",
   fontsize: 10pt,
