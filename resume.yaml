@@ -42,8 +42,8 @@ work:
     startDate: 2025-09-01
     endDate: present
     highlights:
-      - Architected a multi-tenant microservices platform in Go, TypeScript, and Python, using Temporal workflows to enforce transactional consistency across distributed deployments
-      - Built a multi-stage RAG pipeline using pgvector to extract and classify surety bond documents, achieving 95% parsing accuracy and reducing bond issuance from 1 hour to under 5 minutes
+      - Led a team of 3 engineers and architected a multi-tenant microservices platform in Go, TypeScript, and Python, using Temporal workflows to enforce transactional consistency across distributed deployments
+      - Built a multi-stage RAG pipeline using pgvector with reranking to ingest and generate surety bond documents, achieving 95% parsing accuracy and reducing bond issuance from 1 hour to under 5 minutes
       - Processed 500+ bond documents across tenants, maintaining 99% uptime on AWS and Railway with observability via Prometheus, OpenTelemetry, and Grafana
   - position: Software Engineering Intern (Cloud Infrastructure)
     organization: UKG
@@ -61,7 +61,7 @@ work:
     endDate: 2024-08-01
     highlights:
       - Optimized global state management and client-side caching using TypeScript and Angular, reducing page latency by 40%
-      - Implemented multi-stage container build and release pipeline on GCP Cloud Build, improving deployment speed by 30%
+      - Implemented multi-stage container build and release pipeline on GCP Cloud Build, improving deployment speed by 35%
 
 projects:
   - name: "Spotify Warped: HCI Research & Publication"
