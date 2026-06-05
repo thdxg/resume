@@ -1,6 +1,6 @@
 ---
 name: jd-keywords
-description: Given a job-description URL, fetch the posting and generate 10-15 ATS keywords that best match the role, then write them into resume.yaml's invisible `keywords` list and recompile the PDF. Use when the user provides a job posting URL and wants the resume's hidden keywords tailored to it.
+description: Read a job description from jd.txt and generate 10-15 ATS keywords that best match the role, then write them into resume.yaml's invisible `keywords` list and recompile the PDF. Use when the user has pasted a job posting into jd.txt and wants the resume's hidden keywords tailored to it.
 ---
 
 # JD Keywords
@@ -17,15 +17,14 @@ job description and recompiles the PDF.
 
 ## Inputs
 
-- A job-description URL provided by the user (the skill argument or in their message).
+- The job description, pasted by the user into `jd.txt` at the repo root.
 
 ## Steps
 
-1. **Fetch the job description.** Use WebFetch on the URL with a prompt like:
-   "Extract the full job description: role title, required and preferred skills,
-   technologies, responsibilities, and any repeated terminology." If WebFetch is
-   blocked or returns little (some job boards are JS-gated or auth-walled), tell
-   the user and ask them to paste the JD text instead — do not guess.
+1. **Read the job description** from `jd.txt` at the repo root. If the file is
+   missing or empty, tell the user to paste the job description into `jd.txt`
+   first — do not guess. Identify the role title, required and preferred skills,
+   technologies, responsibilities, and any repeated terminology.
 
 2. **Read the candidate's background** from `resume.yaml` (work, projects,
    skills sections) so keywords can be weighted toward what the candidate
@@ -71,5 +70,6 @@ job description and recompiles the PDF.
 
 - Keep keywords role-relevant; a focused 10-15 beats a stuffed list (over-stuffing
   is itself an ATS manipulation signal).
-- If the user gives a URL for a role very different from the resume's focus, still
+- If `jd.txt` describes a role very different from the resume's focus, still
   match the JD as instructed, but make the truthfulness caution explicit.
+- `jd.txt` holds scratch input and is gitignored; do not commit it.

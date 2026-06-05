@@ -132,18 +132,15 @@ skills:
 
 # Invisible keywords (0pt) for ATS/machine parsing. Not visible in the PDF.
 keywords:
-  - Distributed Systems
-  - Microservices
-  - Backend Engineering
-  - Cloud Infrastructure
-  - DevOps
-  - Site Reliability Engineering
-  - CI/CD
-  - Infrastructure as Code
-  - Containerization
-  - Observability
-  - REST APIs
-  - gRPC
-  - Event-Driven Architecture
-  - Scalability
-  - High Availability
+  - Low Latency C++
+  - Trading Systems
+  - High-Frequency Trading
+  - Quantitative Trading
+  - Trading Strategy Development
+  - Financial Markets
+  - Market Data
+  - Systems Programming
+  - Performance Optimization
+  - Concurrency
+  - Multithreading
+  - Low-Level Programming
