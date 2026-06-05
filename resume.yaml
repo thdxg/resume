@@ -105,11 +105,13 @@ skills:
     skills:
       - Go
       - TypeScript
+      - JavaScript
+      - Java
       - C
       - Rust
-      - Java
       - Python
       - SQL
+      - x86 Assembly
   - category: Technologies
     skills:
       - Kubernetes
