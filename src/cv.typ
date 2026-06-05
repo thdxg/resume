@@ -231,20 +231,16 @@
     #for group in info.skills [
       - *#group.category*: #group.skills.join(", ")
     ]
+    // Invisible keywords for ATS/machine parsing. Placed within the Skills
+    // section so the terms sit alongside the real skills. Rendered tiny and
+    // white via `place` so it stays in the PDF text layer (machine-readable)
+    // with no visible mark and no layout impact.
+    #if ("keywords" in info) and (info.keywords != none) and (info.keywords.len() > 0) {
+      place(top + left)[
+        #text(size: 1pt, fill: white)[#info.keywords.join(", ")]
+      ]
+    }
   ]
-}
-
-// Invisible keywords for ATS/machine parsing.
-// Rendered tiny and white so the text exists in the PDF text layer but is
-// not visible. `place` takes it out of the layout flow so it adds no space
-// and never spills onto a new page.
-#let cvkeywords(info) = {
-  if ("keywords" in info) and (info.keywords != none) and (info.keywords.len() > 0) {
-    let kw = info.keywords.join(", ")
-    place(top + left, dx: 0pt, dy: 0pt)[
-      #text(size: 1pt, fill: white)[#kw]
-    ]
-  }
 }
 
 #let cvletter(info, isbreakable: true) = {
