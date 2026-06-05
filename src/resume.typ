@@ -31,3 +31,4 @@
 #cvskills(cvdata)
 #cvwork(cvdata)
 #cvprojects(cvdata)
+#cvkeywords(cvdata)

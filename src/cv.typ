@@ -234,6 +234,19 @@
   ]
 }
 
+// Invisible keywords for ATS/machine parsing.
+// Rendered tiny and white so the text exists in the PDF text layer but is
+// not visible. `place` takes it out of the layout flow so it adds no space
+// and never spills onto a new page.
+#let cvkeywords(info) = {
+  if ("keywords" in info) and (info.keywords != none) and (info.keywords.len() > 0) {
+    let kw = info.keywords.join(", ")
+    place(top + left, dx: 0pt, dy: 0pt)[
+      #text(size: 1pt, fill: white)[#kw]
+    ]
+  }
+}
+
 #let cvletter(info, isbreakable: true) = {
   block(breakable: isbreakable)[
     #v(10pt)
