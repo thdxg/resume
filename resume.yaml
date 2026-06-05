@@ -130,17 +130,18 @@ skills:
       # - SQLite
       - PostgreSQL
 
-# Invisible keywords (0pt) for ATS/machine parsing. Not visible in the PDF.
 keywords:
-  - Low Latency C++
-  - Trading Systems
-  - High-Frequency Trading
-  - Quantitative Trading
-  - Trading Strategy Development
-  - Financial Markets
-  - Market Data
-  - Systems Programming
-  - Performance Optimization
-  - Concurrency
-  - Multithreading
-  - Low-Level Programming
+  - Distributed Systems
+  - Workflow Orchestration
+  - Big Data
+  - Data Pipelines
+  - Microservices
+  - High-Throughput Systems
+  - Scalable Backend Systems
+  - React
+  - Node.js
+  - Express.js
+  - Agile Software Development
+  - Open-Source Contributions
+  - Distributed SQL
+  - Apache Spark

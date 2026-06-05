@@ -2,7 +2,7 @@ version: "3"
 
 vars:
   INPUT: ./src/resume.typ
-  OUTPUT: ./assets/resume
+  OUTPUT: ./assets/Taehoon_Lee_resume
 
 tasks:
   compile:
