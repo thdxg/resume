@@ -4,10 +4,10 @@ Declarative resume built with Typst.
 
 ## Preview
 
-![resume](./assets/resume.png)
+![resume](./assets/Taehoon_Lee_resume.png)
 
 ## Usage
 
-Edit [resume.yaml](./resume.yaml), and run `task compile` to generate PDF and PNG.
+Edit [resume.yaml](./resume.yaml), and run `mise run compile:all` to generate PDF and PNG.
 
-See [taskfile.yaml](./taskfile.yaml) for other useful commands.
+See [mise.toml](./mise.toml) for other useful commands.
