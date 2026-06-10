@@ -42,16 +42,17 @@ work:
     startDate: 2025-09-01
     endDate: present
     highlights:
-      - Led a team of 3 engineers and architected a multi-tenant microservices platform in Go, TypeScript, and Python, using Temporal workflows to enforce transactional consistency across distributed deployments
-      - Built a multi-stage RAG pipeline using pgvector with reranking to ingest and generate surety bond documents, achieving 95% parsing accuracy and reducing bond issuance from 1 hour to under 5 minutes
-      - Processed 500+ bond documents across tenants, maintaining 99% uptime on AWS and Railway with observability via Prometheus, OpenTelemetry, and Grafana
+      - Led a team of 4 engineers to architect an AI-powered surety bond automation platform in Go, TypeScript, and Python
+      - Built a multi-stage RAG pipeline using pgvector, Vertex AI, and reranking models to ingest and generate bond documents, achieving 95% bond request generation accuracy and reducing bond issuance process from 1 hour to under 5 minutes
+      - Developed a web app with role-based UI delivering distinct UX for agents and contractors, enhanced by SSR and tRPC
+      - Deployed a microservices architecture on Google Kubernetes Engine, handling 100+ documents per day across tenants
   - position: Software Engineering Intern (Cloud Infrastructure)
     organization: UKG
     location: Atlanta, GA
     startDate: 2025-05-01
     endDate: 2025-08-01
     highlights:
-      - Developed a REST API in Go utilizing a producer-consumer worker pool to concurrently aggregate the real-time network health of 200+ MongoDB, MySQL, and RabbitMQ VM deployments across 4 geodistributed datacenters
+      - Developed a REST API in Go implementing a producer-consumer worker pool pattern to concurrently aggregate real-time network health of 200+ MongoDB, MySQL, and RabbitMQ deployments across 4 geodistributed datacenters
       - Implemented a TLS certificate validator using Kubernetes CronJobs, accelerating the biannual renewal process by 70%
       - Provisioned Prometheus Blackbox Exporters across isolated OpenStack tenants to achieve distributed observability
   - position: Software Engineering Intern (Full Stack)
@@ -65,33 +66,26 @@ work:
 
 projects:
   - name: "Spotify Warped: HCI Research & Publication"
-    startDate: 2023-11-01
-    endDate: 2025-12-01
     link: https://dl.acm.org/doi/10.1145/3772318.3790875
     highlights:
       - Co-authored and published at ACM CHI 2026 on how Spotify's algorithmic feedback loops shape user listening behavior
       - Built high-throughput data processing pipelines in Python to ingest and analyze 100 GB of Spotify streaming data
-  - name: "Kubernetes Homelab"
-    startDate: 2025-07-01
-    endDate: present
-    link: https://github.com/overburrow
-    highlights:
-      - Architected a bare-metal 3-node K3s cluster using Ansible for provisioning and ArgoCD for declarative GitOps
-      - Configured Cilium CNI as a kube-proxy replacement and implemented Gateway API routing for public and private ingress
-  - name: "Macterm: Native MacOS Terminal Emulator"
-    startDate: 2026-04-01
-    endDate: present
+      - Created interactive data visualization using d3.js and React to explore temporal and spatial patterns of listening behavior
+  - name: "Macterm: Native MacOS Terminal Emulator with Persistent Multiplexing"
     link: https://github.com/thdxg/macterm
     highlights:
-      - Built a macOS terminal in SwiftUI on top of libghostty capable of persistent multiplexing, earning 200+ GitHub stars
-      - Designed an agentic development workflow with Claude, implementing custom tools to automate issue triage and release
+      - Built a macOS terminal in SwiftUI on top of libghostty capable of persistent multiplexing, earning 1K+ downloads
+      - Implemented fuzzy command palette, configurable hotkeys, and declarative YAML configuration for persistent layouts
+  - name: "Kubernetes Homelab"
+    link: https://github.com/overburrow
+    highlights:
+      - Architected a bare-metal 3-node K3s cluster on Raspberry Pis hosting personal projects, powered by Cilium and FluxCD
+      - Implemented dual-gateway ingress using Gateway API, using Tailscale for private and Cloudflare Tunnel for public traffic
   - name: "Emory Hacks: Emory University's Hackathon Organization"
-    startDate: 2024-09-01
-    endDate: 2026-05-01
     link: https://emoryhacks.com
     highlights:
-      - Co-founded Emory's first hackathon organization and attracted 300+ participants and \$20K+ sponsorship over 2 years
-      - Developed annual hackathon website using Next.js and TypeScript with a registration system using PostgreSQL
+      - Attracted 300+ participants and \$20K+ sponsorship over 2 years as a co-founder, leading the technology department
+      - Developed annual hackathon website using Next.js and TypeScript with a backend using Spring Boot and Firebase
   # - name: "Kubernetes Open-Source Contribution"
   #   startDate: 2026-01-01
   #   endDate: present
@@ -131,17 +125,17 @@ skills:
       - PostgreSQL
 
 keywords:
-  - Distributed Systems
-  - Workflow Orchestration
-  - Big Data
-  - Data Pipelines
-  - Microservices
-  - High-Throughput Systems
-  - Scalable Backend Systems
-  - React
-  - Node.js
-  - Express.js
-  - Agile Software Development
-  - Open-Source Contributions
-  - Distributed SQL
-  - Apache Spark
+  - Back-End Engineering
+  - Core OS
+  - macOS Development
+  - iOS Development
+  - Object-Oriented Design
+  - Data Structures and Algorithms
+  - Client-Server API Design
+  - Data Modeling and Processing
+  # - MapReduce
+  - Distributed Technologies
+  - SwiftUI
+  - AngularJS
+  - Full Stack Development
+  - Information Systems and Technology

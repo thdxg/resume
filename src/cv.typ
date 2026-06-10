@@ -212,8 +212,6 @@
     block[
       == #title
       #for project in info.projects {
-        let start = utils.strpdate(project.startDate)
-        let end = utils.strpdate(project.endDate)
         block(width: 100%, breakable: isbreakable, below: 1em)[
           *#project.name*  #h(1fr) #link(project.link)[#project.link.split("//").at(1)] \
           #for hi in project.highlights [
