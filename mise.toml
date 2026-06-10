@@ -1,0 +1,36 @@
+[env]
+INPUT = "./src/resume.typ"
+OUTPUT = "./assets/Taehoon_Lee_resume"
+CONFIG = "./resume.yaml"
+
+[tasks."compile:all"]
+description = "Compile both pdf and png in parallel"
+run = [{ tasks = ["compile pdf", "compile png"] }]
+
+[tasks.compile]
+description = "Compile resume in specified format (pdf, png)"
+sources = ["{{ env.INPUT }}", "{{ env.CONFIG }}"]
+usage = """
+arg "<format>" help="Output format" {
+  choices "pdf" "png"
+}
+"""
+run = """
+mkdir -p ./assets
+typst compile {{ env.INPUT }} {{ env.OUTPUT }}.{{ usage.format }} --root .
+"""
+
+[tasks.preview]
+description = "Preview in browser"
+run = """
+tinymist preview {{ env.INPUT }} --partial-rendering true --root .
+"""
+
+[tasks.print]
+description = "Print compiled image"
+sources = ["{{ env.INPUT }}", "{{ env.CONFIG }}"]
+run = [
+  { task = "compile png" },
+  "clear",
+  "chafa {{ env.OUTPUT }}.png --fit-width",
+]
