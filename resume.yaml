@@ -33,7 +33,7 @@ education:
       - Summa Cum Laude
       - 2x James T Laney Scholarship
       - 5x Dean's List
-      - Phi Beta Kappa honor society
+      - Phi Beta Kappa Honor Society
 
 work:
   - position: Founding Engineer & CTO
@@ -52,7 +52,7 @@ work:
     startDate: 2025-05-01
     endDate: 2025-08-01
     highlights:
-      - Developed a REST API in Go implementing a producer-consumer worker pool pattern to concurrently aggregate real-time network health of 200+ MongoDB, MySQL, and RabbitMQ deployments across 4 geodistributed datacenters
+      - Developed a production REST API in Go implementing a worker pool concurrency pattern to aggregate and monitor network health of 200+ MongoDB, MySQL, and RabbitMQ servers across 4 geodistributed datacenters real-time
       - Implemented a TLS certificate validator using Kubernetes CronJobs, accelerating the biannual renewal process by 70%
       - Provisioned Prometheus Blackbox Exporters across isolated OpenStack tenants to achieve distributed observability
   - position: Software Engineering Intern (Full Stack)
@@ -62,14 +62,14 @@ work:
     endDate: 2024-08-01
     highlights:
       - Optimized global state management and client-side caching using TypeScript and Angular, reducing page latency by 40%
-      - Implemented multi-stage container build and release pipeline on GCP Cloud Build, improving deployment speed by 35%
+      - Created multi-stage container build and release pipeline on GCP Cloud Build, improving deployment speed by 35%
 
 projects:
   - name: "Spotify Warped: HCI Research & Publication"
     link: https://dl.acm.org/doi/10.1145/3772318.3790875
     highlights:
-      - Co-authored and published at ACM CHI 2026 on how Spotify's algorithmic feedback loops shape user listening behavior
-      - Built high-throughput data processing pipelines in Python to ingest and analyze 100 GB of Spotify streaming data
+      - Published to ACM CHI 2026 on how Spotify's algorithmic feedback loops shape listening behavior and data engagement
+      - Built high-throughput data processing pipelines in Python to ingest 100 GB of Spotify streaming data from 60 users
       - Created interactive data visualization using d3.js and React to explore temporal and spatial patterns of listening behavior
   - name: "Macterm: Native MacOS Terminal Emulator with Persistent Multiplexing"
     link: https://github.com/thdxg/macterm
@@ -105,6 +105,8 @@ skills:
       - Rust
       - Python
       - SQL
+      - HTML
+      - CSS
       - x86 Assembly
   - category: Technologies
     skills:
@@ -114,15 +116,10 @@ skills:
       - AWS
       - GCP
       - Cloudflare
-      - Helm
-      # - ArgoCD
-      # - Ansible
-      - Prometheus
-      - OpenTelemetry
-      # - Grafana
-      - Redis
-      # - SQLite
       - PostgreSQL
+      - Redis
+      - MongoDB
+      - OpenTelemetry
 
 keywords:
   - Back-End Engineering
