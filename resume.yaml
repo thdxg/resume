@@ -30,7 +30,7 @@ education:
     location: Atlanta, GA
     honors:
       - 3.99/4.0 GPA
-      - Summa Cum Laude
+      - Magna Cum Laude
       - 2x James T Laney Scholarship
       - 5x Dean's List
       - Phi Beta Kappa Honor Society
@@ -42,11 +42,11 @@ work:
     startDate: 2025-09-01
     endDate: present
     highlights:
-      - Led a team of 4 engineers to architect an AI-powered surety bond automation platform in Go, TypeScript, and Python
-      - Built a multi-stage RAG pipeline using pgvector, Vertex AI, and reranking models to ingest and generate bond documents, achieving 95% bond request generation accuracy and reducing bond issuance process from 1 hour to under 5 minutes
-      - Developed a web app with role-based UI delivering distinct UX for agents and contractors, enhanced by SSR and tRPC
-      - Deployed a microservices architecture on Google Kubernetes Engine, handling 100+ documents per day across tenants
-  - position: Software Engineering Intern (Cloud Infrastructure)
+      - Led a team of 4 engineers to architect an AI-native surety bond automation platform in Go, TypeScript, and Python
+      - Built a multi-stage RAG pipeline with cross-document context retrieval that generates and auto-fills bond PDFs at 95% accuracy, cutting bond issuance process from 1 hour to under 5 minutes
+      - Shipped a role-based frontend delivering distinct agent and contractor experiences, enhanced by SSR and tRPC
+      - Designed an observability pipeline using OpenTelemetry with distributed tracing and end-to-end context propagation
+  - position: Software Engineering Intern
     organization: UKG
     location: Atlanta, GA
     startDate: 2025-05-01
@@ -55,7 +55,7 @@ work:
       - Developed a production REST API in Go implementing a worker pool concurrency pattern to aggregate and monitor network health of 200+ MongoDB, MySQL, and RabbitMQ servers across 4 geodistributed datacenters real-time
       - Implemented a TLS certificate validator using Kubernetes CronJobs, accelerating the biannual renewal process by 70%
       - Provisioned Prometheus Blackbox Exporters across isolated OpenStack tenants to achieve distributed observability
-  - position: Software Engineering Intern (Full Stack)
+  - position: Software Engineering Intern
     organization: eStreamly
     location: Atlanta, GA
     startDate: 2024-06-01
@@ -71,11 +71,11 @@ projects:
       - Published to ACM CHI 2026 on how Spotify's algorithmic feedback loops shape listening behavior and data engagement
       - Built high-throughput data processing pipelines in Python to ingest 100 GB of Spotify streaming data from 60 users
       - Created interactive data visualization using d3.js and React to explore temporal and spatial patterns of listening behavior
-  - name: "Macterm: Native MacOS Terminal Emulator with Persistent Multiplexing"
+  - name: "Macterm: MacOS Terminal Emulator with Persistent Multiplexing (2.5K+ downloads)"
     link: https://github.com/thdxg/macterm
     highlights:
-      - Built a macOS terminal in SwiftUI on top of libghostty capable of persistent multiplexing, earning 1.5K+ downloads
-      - Implemented fuzzy command palette, configurable hotkeys, and declarative YAML configuration for persistent layouts
+      - Built a native macOS terminal in SwiftUI and libghostty, gaining 2.5K+ downloads and 10+ contributors globally
+      - Implemented session persistence, declarative layout configuration, fuzzy command palette, and configurable hotkeys
   - name: "Kubernetes Homelab"
     link: https://github.com/overburrow
     highlights:
@@ -118,8 +118,8 @@ skills:
       - Cloudflare
       - PostgreSQL
       - Redis
-      - MongoDB
       - OpenTelemetry
+      - Temporal
 
 keywords:
   - Back-End Engineering
