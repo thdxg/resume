@@ -71,10 +71,10 @@ projects:
       - Published to ACM CHI 2026 on how Spotify's algorithmic feedback loops shape listening behavior and data engagement
       - Built high-throughput data processing pipelines in Python to ingest 100 GB of Spotify streaming data from 60 users
       - Created interactive data visualization using d3.js and React to explore temporal and spatial patterns of listening behavior
-  - name: "Macterm: MacOS Terminal Emulator with Persistent Multiplexing (2.5K+ downloads)"
+  - name: "Macterm: MacOS Terminal Emulator with Persistent Multiplexing (3K+ downloads)"
     link: https://github.com/thdxg/macterm
     highlights:
-      - Built a native macOS terminal in SwiftUI and libghostty, gaining 2.5K+ downloads and 10+ contributors globally
+      - Built a native macOS terminal with SwiftUI and libghostty, gaining 3K+ downloads and 10+ contributors globally
       - Implemented session persistence, declarative layout configuration, fuzzy command palette, and configurable hotkeys
   - name: "Kubernetes Homelab"
     link: https://github.com/overburrow
