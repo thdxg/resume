@@ -8,6 +8,7 @@
 // Per-application content — edit these for each job.
 // ============================================================================
 #let company = "Voloridge"
+#let impact = "a superior investment platform"
 #let letterdate = datetime.today().display("[month repr:long] [day], [year]")
 #let greeting = "Dear Hiring Manager,"
 
@@ -67,7 +68,7 @@ What draws me to #company is building rigorous, high-performance software where
 reliability and correctness genuinely matter. I'm energized by hard technical
 problems, and I'd love to bring my instincts in systems and products to the
 engineering your teams tackle every day. I am excited by the prospect that the
-engineering impact I make would translate to #company.
+engineering impact I make would translate to #impact.
 
 // ============================================================================
 // Signature
