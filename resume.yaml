@@ -43,7 +43,7 @@ work:
     endDate: present
     highlights:
       - Led a team of 4 engineers to architect an AI-native surety bond automation platform in Go, TypeScript, and Python
-      - Built a multi-stage RAG pipeline with cross-document context retrieval that generates and auto-fills bond PDFs at 95% accuracy, cutting bond issuance process from 1 hour to under 5 minutes
+      - Built a multi-stage RAG pipeline with cross-document context retrieval that generates and auto-fills bond documents with 95% accuracy, cutting bond issuance process from 1 hour to under 5 minutes
       - Shipped a role-based frontend delivering distinct agent and contractor experiences, enhanced by SSR and tRPC
       - Designed an observability pipeline using OpenTelemetry with distributed tracing and end-to-end context propagation
   - position: Software Engineering Intern
@@ -65,17 +65,21 @@ work:
       - Created multi-stage container build and release pipeline on GCP Cloud Build, improving deployment speed by 35%
 
 projects:
+  - name: "Macterm: MacOS Terminal Emulator with Persistent Multiplexing"
+    link: https://github.com/thdxg/macterm
+    highlights:
+      - Built a native macOS terminal with SwiftUI and libghostty, gaining 3K+ downloads and 15 contributors globally
+      - Implemented session persistence, declarative layout configuration, fuzzy command palette, and configurable hotkeys
+  - name: "Echo: High performance Go HTTP framework (Contributor)"
+    link: https://github.com/labstack/echo
+    highlights:
+      - Implemented HTTP QUERY method in the core router and added support for QUERY method in OpenAPI 3.2 spec
   - name: "Spotify Warped: HCI Research & Publication"
     link: https://dl.acm.org/doi/10.1145/3772318.3790875
     highlights:
       - Published to ACM CHI 2026 on how Spotify's algorithmic feedback loops shape listening behavior and data engagement
       - Built high-throughput data processing pipelines in Python to ingest 100 GB of Spotify streaming data from 60 users
-      - Created interactive data visualization using d3.js and React to explore temporal and spatial patterns of listening behavior
-  - name: "Macterm: MacOS Terminal Emulator with Persistent Multiplexing (3K+ downloads)"
-    link: https://github.com/thdxg/macterm
-    highlights:
-      - Built a native macOS terminal with SwiftUI and libghostty, gaining 3K+ downloads and 10+ contributors globally
-      - Implemented session persistence, declarative layout configuration, fuzzy command palette, and configurable hotkeys
+      # - Created interactive data visualization using d3.js and React to explore temporal and spatial patterns of listening behavior
   - name: "Kubernetes Homelab"
     link: https://github.com/overburrow
     highlights:
@@ -84,7 +88,7 @@ projects:
   - name: "Emory Hacks: Emory University's Hackathon Organization"
     link: https://emoryhacks.com
     highlights:
-      - Attracted 300+ participants and \$20K+ sponsorship over 2 years as a co-founder, leading the technology department
+      # - Attracted 300+ participants and \$20K+ sponsorship over 2 years as a co-founder, leading the technology department
       - Developed annual hackathon website using Next.js and TypeScript with a backend using Spring Boot and Firebase
   # - name: "Kubernetes Open-Source Contribution"
   #   startDate: 2026-01-01
