@@ -1,70 +1,7 @@
-#import "utils.typ"
-
-// set rules
-#let setrules(uservars, doc) = {
-  set text(
-    font: uservars.bodyfont,
-    size: uservars.fontsize,
-    hyphenate: false,
-  )
-
-  set list(
-    body-indent: 2.5pt,
-    spacing: uservars.linespacing,
-  )
-
-  set par(
-    leading: uservars.linespacing,
-    justify: false,
-  )
-
-  set page(
-    paper: uservars.paper,
-    margin: uservars.margin,
-  )
-
-  doc
-}
-
-// show rules
-#let showrules(uservars, doc) = {
-  // Uppercase section headings
-  show heading.where(
-    level: 2,
-  ): it => block(width: 100%)[
-    #v(uservars.sectionspacing)
-    #set align(left)
-    #set text(font: uservars.headingfont, size: 1em, weight: "bold")
-    #upper(it.body)
-    #v(-0.8em) #line(length: 100%, stroke: 1pt + black)
-  ]
-
-  // Name title/heading
-  show heading.where(
-    level: 1,
-  ): it => block(width: 100%)[
-    #set text(font: uservars.headingfont, size: 1.5em, weight: "bold")
-    #if (uservars.at("headingsmallcaps", default: false)) {
-      smallcaps(it.body)
-    } else {
-      upper(it.body)
-    }
-  ]
-
-  show link: it => text[
-    #it
-  ]
-
-  doc
-}
-
-// Set page layout
-#let cvinit(doc) = {
-  doc = setrules(doc)
-  doc = showrules(doc)
-
-  doc
-}
+// CV content components. Each renders a section from the YAML data (`info`)
+// using `uservars` for styling. Generic page/heading theming lives in
+// `/lib/theme.typ`; date helpers in `/lib/utils.typ`.
+#import "/lib/utils.typ"
 
 // Job titles
 #let jobtitletext(info, uservars) = {
@@ -137,6 +74,25 @@
     #jobtitletext(info, uservars)
     #addresstext(info, uservars)
     #contacttext(info, uservars)
+  ]
+}
+
+// Cover-letter header: left-aligned name with a trimmed contact line
+// (email + website only, no profile links). Kept separate from `cvheading`
+// so the resume header is unaffected.
+#let letterheading(info) = {
+  let contacts = (
+    if ("email" in info.personal) and (info.personal.email != none) {
+      box(info.personal.email)
+    },
+    if ("url" in info.personal) and (info.personal.url != none) {
+      box(link(info.personal.url)[#info.personal.url.split("//").at(1)])
+    },
+  ).filter(it => it != none)
+
+  align(left)[
+    = #info.personal.name
+    #contacts.join([#sym.space #sym.dot #sym.space])
   ]
 }
 
@@ -238,12 +194,5 @@
         #text(size: 1pt, fill: white)[#info.keywords.join(", ")]
       ]
     }
-  ]
-}
-
-#let cvletter(info, isbreakable: true) = {
-  block(breakable: isbreakable)[
-    #v(10pt)
-    #info.letter
   ]
 }

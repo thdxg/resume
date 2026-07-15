@@ -1,36 +1,65 @@
-[env]
-INPUT = "./src/resume.typ"
-OUTPUT = "./assets/Taehoon_Lee_resume"
-CONFIG = "./resume.yaml"
-
 [tasks."compile:all"]
-description = "Compile both pdf and png in parallel"
-run = [{ tasks = ["compile pdf", "compile png"] }]
+description = "Compile resume and cover letter (pdf + png) in parallel"
+run = [
+  { tasks = [
+    "compile resume pdf",
+    "compile resume png",
+    "compile cover-letter pdf",
+    "compile cover-letter png",
+  ] },
+]
 
 [tasks.compile]
-description = "Compile resume in specified format (pdf, png)"
-sources = ["{{ env.INPUT }}", "{{ env.CONFIG }}"]
+description = "Compile a document in the specified format (pdf, png)"
+sources = ["lib/**/*.typ", "docs/**/*.typ", "resume.yaml"]
 usage = """
+arg "<document>" help="Document to compile" {
+  choices "resume" "cover-letter"
+}
 arg "<format>" help="Output format" {
   choices "pdf" "png"
 }
 """
 run = """
 mkdir -p ./assets
-typst compile {{ env.INPUT }} {{ env.OUTPUT }}.{{ usage.format }} --root .
+{% if usage.document == "resume" %}
+typst compile ./docs/resume.typ ./assets/Taehoon_Lee_resume.{{ usage.format }} --root .
+{% else %}
+typst compile ./docs/cover-letter.typ ./assets/cover-letter.{{ usage.format }} --root .
+{% endif %}
 """
 
 [tasks.preview]
-description = "Preview in browser"
+description = "Preview a document in browser (resume, cover-letter)"
+usage = """
+arg "<document>" help="Document to preview" {
+  choices "resume" "cover-letter"
+}
+"""
 run = """
-tinymist preview {{ env.INPUT }} --partial-rendering true --root .
+{% if usage.document == "resume" %}
+tinymist preview ./docs/resume.typ --partial-rendering true --root .
+{% else %}
+tinymist preview ./docs/cover-letter.typ --partial-rendering true --root .
+{% endif %}
 """
 
 [tasks.print]
-description = "Print compiled image"
-sources = ["{{ env.INPUT }}", "{{ env.CONFIG }}"]
-run = [
-  { task = "compile png" },
-  "clear",
-  "chafa {{ env.OUTPUT }}.png --fit-width",
-]
+description = "Print compiled image of a document (resume, cover-letter)"
+sources = ["lib/**/*.typ", "docs/**/*.typ", "resume.yaml"]
+usage = """
+arg "<document>" help="Document to print" {
+  choices "resume" "cover-letter"
+}
+"""
+run = """
+{% if usage.document == "resume" %}
+mise run compile resume png
+clear
+chafa ./assets/Taehoon_Lee_resume.png --fit-width
+{% else %}
+mise run compile cover-letter png
+clear
+chafa ./assets/cover-letter.png --fit-width
+{% endif %}
+"""

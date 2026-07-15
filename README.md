@@ -1,6 +1,6 @@
-# Resume
+# Resume & Cover Letter
 
-Declarative resume built with Typst.
+Declarative resume and cover letter built with Typst.
 
 ## Preview
 
@@ -8,6 +8,17 @@ Declarative resume built with Typst.
 
 ## Usage
 
-Edit [resume.yaml](./resume.yaml), and run `mise run compile:all` to generate PDF and PNG.
+- Edit resume content in [resume.yaml](./resume.yaml).
+- Edit the cover letter (company, greeting, prose) at the top of
+  [docs/cover-letter.typ](./docs/cover-letter.typ).
+- Run `mise run compile:all` to generate PDF + PNG for both documents.
 
-See [mise.toml](./mise.toml) for other useful commands.
+Compile or preview a single document:
+
+```
+mise run compile resume pdf
+mise run compile cover-letter png
+mise run preview resume
+```
+
+See [mise.toml](./mise.toml) for all commands.
