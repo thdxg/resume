@@ -66,12 +66,6 @@ work:
       - Created multi-stage container build and release pipeline on GCP Cloud Build, improving deployment speed by 35%
 
 projects:
-  - name: "Spotify Warped: HCI Research & Publication"
-    link: https://dl.acm.org/doi/10.1145/3772318.3790875
-    highlights:
-      - Published to ACM CHI 2026 on how Spotify's algorithmic feedback loops shape listening behavior and data engagement
-      - Built high-throughput data processing pipelines in Python to ingest 100 GB of Spotify streaming data from 60 users
-      # - Created interactive data visualization using d3.js and React to explore temporal and spatial patterns of listening behavior
   - name: "Macterm: MacOS Terminal Emulator with Persistent Multiplexing"
     link: https://github.com/thdxg/macterm
     highlights:
@@ -81,6 +75,12 @@ projects:
     link: https://github.com/labstack/echo
     highlights:
       - Implemented HTTP QUERY method in the core router and added support for QUERY method in OpenAPI 3.2 spec
+  - name: "Spotify Warped: HCI Research & Publication"
+    link: https://dl.acm.org/doi/10.1145/3772318.3790875
+    highlights:
+      - Published to ACM CHI 2026 on how Spotify's algorithmic feedback loops shape listening behavior and data engagement
+      - Built high-throughput data processing pipelines in Python to ingest 100 GB of Spotify streaming data from 60 users
+      # - Created interactive data visualization using d3.js and React to explore temporal and spatial patterns of listening behavior
   - name: "Kubernetes Homelab"
     link: https://github.com/overburrow
     highlights:
