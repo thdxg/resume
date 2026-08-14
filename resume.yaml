@@ -14,8 +14,8 @@ personal:
 education:
   - institution: Carnegie Mellon University
     area:
-      - studyType: MS
-        name: Computer Science
+      - studyType: Master's
+        name: Software Engineering - Scalable Systems
     startDate: 2026-08-01
     endDate: 2028-05-01
     location: Pittsburgh, PA
@@ -36,16 +36,16 @@ education:
       - Phi Beta Kappa Honor Society
 
 work:
-  - position: Founding Engineer & CTO
+  - position: Founding Engineer
     organization: Huddle Surety (Techstars Pre-Accelerator)
     location: Atlanta, GA
     startDate: 2025-09-01
     endDate: present
     highlights:
-      - Innovated the surety industry with an AI-powered bond automation platform reducing the bond processing time by 90%
+      - Innovating the surety industry with an AI-powered bond automation platform reducing the bond processing time by 90%
       - Built multi-stage RAG pipelines with cross-document context retrieval generating bond documents with 95% accuracy
-      - Designed the core Go REST API spanning 100+ endpoints with Redis caching and relationship-based auth (ReBAC)
-      - Shipped a role-based frontend delivering distinct surety agent and contractor experiences using Next.js and TypeScript
+      - Developed the core Go REST API spanning 100+ endpoints with Redis caching, relationship-based auth, and audit logs
+      - Shipped a role-based frontend delivering distinct surety agent and contractor UX using Next.js, TypeScript, and tRPC
       - Architected an OpenTelemetry observability pipeline with end-to-end context propagation and tracing across services
   - position: Software Engineering Intern
     organization: UKG
@@ -69,28 +69,26 @@ projects:
   - name: "Macterm: MacOS Terminal Emulator with Persistent Multiplexing"
     link: https://github.com/thdxg/macterm
     highlights:
-      - Built a native macOS terminal with SwiftUI and libghostty, gaining 4K+ downloads and 15 contributors globally
+      - Built a native macOS terminal with SwiftUI and libghostty, gaining 5K+ downloads and 15 contributors globally
       - Implemented session persistence, declarative layout configuration, fuzzy command palette, and configurable hotkeys
-  - name: "Echo: High performance Go HTTP framework (Contributor)"
-    link: https://github.com/labstack/echo
+  - name: "Kubernetes Homelab"
+    link: https://github.com/thdxg/homelab
     highlights:
-      - Implemented HTTP QUERY method in the core router and added support for QUERY method in OpenAPI 3.2 spec
+      - Designed a two-node Kubernetes cluster on Raspberry Pi, fully automating CI/CD via GitOps using FluxCD and sops
+      - Published personal projects and dashboards via Gatewaty API ingress with automatic TLS certificates and dynamic DNS
+      - Contributed to Kubernetes documentation on pod scheduling and eviction by synchronizing outdated Korean docs
+      - Contributed to Cilium CNI by tracing a runaway loop with livelock causing high CPU usage and silent traffic drops
   - name: "Spotify Warped: HCI Research & Publication"
     link: https://dl.acm.org/doi/10.1145/3772318.3790875
     highlights:
       - Published to ACM CHI 2026 on how Spotify's algorithmic feedback loops shape listening behavior and data engagement
       - Built high-throughput data processing pipelines in Python to ingest 100 GB of Spotify streaming data from 60 users
       # - Created interactive data visualization using d3.js and React to explore temporal and spatial patterns of listening behavior
-  - name: "Kubernetes Homelab"
-    link: https://github.com/overburrow
-    highlights:
-      - Architected a bare-metal 3-node K3s cluster on Raspberry Pis hosting personal projects, powered by Cilium and FluxCD
-      - Implemented dual-gateway ingress using Gateway API, using Tailscale for private and Cloudflare Tunnel for public traffic
   - name: "Emory Hacks: Emory University's Hackathon Organization"
     link: https://emoryhacks.com
     highlights:
-      # - Attracted 300+ participants and \$20K+ sponsorship over 2 years as a co-founder, leading the technology department
-      - Developed annual hackathon website using Next.js and TypeScript with a backend using Spring Boot and Firebase
+      # - Attracted 300+ participants and \$20K+ sponsorship over 2 years as a co-founder and technology department lead
+      - Co-founded and developed annual hackathon website and registration system using Next.js, Spring Boot, and Firebase
   # - name: "Kubernetes Open-Source Contribution"
   #   startDate: 2026-01-01
   #   endDate: present
@@ -125,18 +123,3 @@ skills:
       - Redis
       - OpenTelemetry
       - Temporal
-
-keywords:
-  # - Back-End Engineering
-  # - Core OS
-  # - macOS Development
-  # - iOS Development
-  # - Object-Oriented Design
-  # - Data Structures and Algorithms
-  # - Client-Server API Design
-  # - Data Modeling and Processing
-  # - Distributed Technologies
-  # - SwiftUI
-  # - AngularJS
-  # - Full Stack Development
-  # - Information Systems and Technology

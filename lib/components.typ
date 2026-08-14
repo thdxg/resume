@@ -185,14 +185,5 @@
     #for group in info.skills [
       - *#group.category*: #group.skills.join(", ")
     ]
-    // Invisible keywords for ATS/machine parsing. Placed within the Skills
-    // section so the terms sit alongside the real skills. Rendered tiny and
-    // white via `place` so it stays in the PDF text layer (machine-readable)
-    // with no visible mark and no layout impact.
-    #if ("keywords" in info) and (info.keywords != none) and (info.keywords.len() > 0) {
-      place(top + left)[
-        #text(size: 1pt, fill: white)[#info.keywords.join(", ")]
-      ]
-    }
   ]
 }
