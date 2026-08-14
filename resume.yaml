@@ -75,7 +75,7 @@ projects:
     link: https://github.com/thdxg/homelab
     highlights:
       - Designed a two-node Kubernetes cluster on Raspberry Pi, fully automating CI/CD via GitOps using FluxCD and sops
-      - Published personal projects and dashboards via Gatewaty API ingress with automatic TLS certificates and dynamic DNS
+      - Published personal projects and dashboards via Gateway API ingress with automatic TLS certificates and dynamic DNS
       - Contributed to Kubernetes documentation on pod scheduling and eviction by synchronizing outdated Korean docs
       - Contributed to Cilium CNI by tracing a runaway loop with livelock causing high CPU usage and silent traffic drops
   - name: "Spotify Warped: HCI Research & Publication"
