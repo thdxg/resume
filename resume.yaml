@@ -46,17 +46,17 @@ work:
       - Built multi-stage RAG pipelines with cross-document context retrieval generating bond documents with 95% accuracy
       - Developed the core Go REST API spanning 100+ endpoints with Redis caching, relationship-based auth, and audit logs
       - Shipped a role-based frontend delivering distinct surety agent and contractor UX using Next.js, TypeScript, and tRPC
-      - Architected an OpenTelemetry observability pipeline with end-to-end context propagation and tracing across services
-  - position: Software Engineering Intern
+      # - Architected an OpenTelemetry observability pipeline with end-to-end context propagation and tracing across services
+  - position: Software Engineering Intern (Cloud Infrastructure)
     organization: UKG
     location: Atlanta, GA
     startDate: 2025-05-01
     endDate: 2025-08-01
     highlights:
-      - Developed a production REST API in Go implementing the worker pool concurrency pattern to aggregate and monitor network health of 200+ MongoDB, MySQL, and RabbitMQ servers across 4 geodistributed datacenters real-time
-      - Implemented a TLS certificate validator using Kubernetes CronJobs, accelerating the biannual renewal process by 70%
+      - Implemented a Kubernetes CronJob that validates TLS certificates of 200+ production MongoDB, MySQL, and RabbitMQ VMs across 4 datacenters, removing manual healthchecks and accelerating the annual certificate renewal process
+      - Developed a multi-cluster Kubernetes network observability pipeline using OpenTelemetry, Prometheus, and Grafana, collecting telemetry from 5 clusters through a custom Go REST API to streamline infrastructure health monitoring
       - Provisioned Prometheus Blackbox Exporters across isolated OpenStack tenants to achieve distributed observability
-  - position: Software Engineering Intern
+  - position: Software Engineering Intern (Full Stack)
     organization: eStreamly
     location: Atlanta, GA
     startDate: 2024-06-01
