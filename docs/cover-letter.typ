@@ -7,8 +7,8 @@
 // ============================================================================
 // Per-application content — edit these for each job.
 // ============================================================================
-#let company = "Vierra"
-#let impact = "more robust sales funnel"
+#let company = "Phreeli Company"
+#let impact = "the real world"
 #let letterdate = datetime.today().display("[month repr:long] [day], [year]")
 #let greeting = "Dear Hiring Manager,"
 
