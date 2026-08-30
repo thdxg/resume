@@ -11,7 +11,7 @@ run = [
 
 [tasks.compile]
 description = "Compile a document in the specified format (pdf, png)"
-sources = ["lib/**/*.typ", "docs/**/*.typ", "resume.yaml"]
+sources = ["lib/**/*.typ", "docs/**/*.typ", "resume.yaml", "cover-letter.yaml"]
 usage = """
 arg "<document>" help="Document to compile" {
   choices "resume" "cover-letter"
@@ -46,7 +46,7 @@ tinymist preview ./docs/cover-letter.typ --partial-rendering true --root .
 
 [tasks.print]
 description = "Print compiled image of a document (resume, cover-letter)"
-sources = ["lib/**/*.typ", "docs/**/*.typ", "resume.yaml"]
+sources = ["lib/**/*.typ", "docs/**/*.typ", "resume.yaml", "cover-letter.yaml"]
 usage = """
 arg "<document>" help="Document to print" {
   choices "resume" "cover-letter"

@@ -9,7 +9,9 @@ Declarative resume and cover letter built with Typst.
 ## Usage
 
 - Edit resume content in [resume.yaml](./resume.yaml).
-- Edit the cover letter (company, greeting, prose) at the top of
+- Edit per-application cover letter variables (company, position, motivation)
+  in [cover-letter.yaml](./cover-letter.yaml).
+- Edit the cover letter greeting and prose in
   [docs/cover-letter.typ](./docs/cover-letter.typ).
 - Run `mise run compile:all` to generate PDF + PNG for both documents.
 
