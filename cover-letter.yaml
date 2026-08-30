@@ -1,9 +1,4 @@
-# Per-application content for docs/cover-letter.typ.
-# Edit these for each job; the prose template lives in the .typ file.
-
-company: Prophet Security
-position: Backend Intern
-
-# Rendered as its own paragraph before the closing.
+company: Waggoner
+position: Software Engineer Intern
 motivation: |-
-  I'm drawn to CaelumenAI because PERCO sits exactly where my last two years have been pointing: cloud infrastructure, but judged by whether a release is controlled and legible afterward. I operate my own Kubernetes cluster, contribute upstream to Kubernetes and Next.js, and spent Summer 2025 on a cloud infrastructure team debugging failures at a scale I couldn't reproduce locally. The internship I want is one where I own a slice end to end and have to prove it works.
+  I'm drawn to Waggoner because your internal platform is close to what I build now. At Huddle Surety I own both sides of the same boundary you're describing: a Go REST API spanning 100+ endpoints with relationship-based auth and audit logging, and the Next.js and tRPC frontend on top of it, used by surety agents who aren't engineers and who act on what it tells them. I also built the multi-stage RAG pipeline there, which is the same problem as document search and chat over internal knowledge, including the part where being confidently wrong is worse than returning nothing. Advisors making investment decisions raise that stakes further, and that's the constraint I'd want to design against.

@@ -69,7 +69,7 @@ projects:
   - name: "Macterm: MacOS Terminal Emulator with Persistent Multiplexing"
     link: https://github.com/thdxg/macterm
     highlights:
-      - Built a native macOS terminal with SwiftUI and libghostty, gaining 5K+ downloads and 15 contributors globally
+      - Built a native macOS terminal with SwiftUI and libghostty, gaining 5K+ downloads and 16 contributors globally
       - Implemented session persistence, declarative layout configuration, fuzzy command palette, and configurable hotkeys
   - name: "Kubernetes Homelab"
     link: https://github.com/thdxg/homelab
