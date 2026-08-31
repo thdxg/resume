@@ -126,16 +126,8 @@
             *#edu.institution* #h(1fr) *#edu.location* \
           ]
           #if ("area" in edu) and (edu.area != none) [
-            #let degree-str = if type(edu.area) == array {
-              edu.area.map(a => a.studyType + " in " + a.name).join(", ")
-            } else {
-              edu.studyType + " in " + edu.area
-            }
-            #text(style: "italic")[#degree-str] #h(1fr)
-          ] else [
-            #text(style: "italic")[#edu.studyType] #h(1fr)
-          ]
-          #utils.daterange(none, end) \
+            #text(style: "italic")[#edu.area]
+          ] #h(1fr) #utils.daterange(none, end) \
           #eval(edu-items, mode: "markup")
         ]
       }
@@ -169,7 +161,9 @@
       == #title
       #for project in info.projects {
         block(width: 100%, breakable: isbreakable, below: 1em)[
-          *#project.name*  #h(1fr) #link(project.link)[#project.link.split("//").at(1)] \
+          *#project.name*#if ("skills" in project) and (project.skills != none) [
+            #sym.bar.v #text(style: "italic")[#project.skills.join(", ")]
+          ] #h(1fr) #box(link(project.link)[#project.link.split("//").at(1)]) \
           #for hi in project.highlights [
             - #eval(hi, mode: "markup")
           ]

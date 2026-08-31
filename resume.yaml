@@ -13,18 +13,12 @@ personal:
 
 education:
   - institution: Carnegie Mellon University
-    area:
-      - studyType: Master's
-        name: Software Engineering - Scalable Systems
+    area: Master of Software Engineering - Scalable Systems
     startDate: 2026-08-01
     endDate: 2027-12-01
     location: Pittsburgh, PA
   - institution: Emory University
-    area:
-      - studyType: BS
-        name: Computer Science
-      # - studyType: BS
-      #   name: Psychology
+    area: BS in Computer Science
     startDate: 2023-08-01
     endDate: 2026-05-01
     location: Atlanta, GA
@@ -36,17 +30,17 @@ education:
       - Phi Beta Kappa Honor Society
 
 work:
-  - position: Software Engineer
+  - position: Founding Software Engineer
     organization: Huddle Surety
     location: Atlanta, GA
     startDate: 2025-09-01
     endDate: present
     highlights:
-      - Innovating the surety industry with an AI-powered bond automation platform reducing the bond processing time by 90%
-      - Built multi-stage RAG pipelines with cross-document context retrieval generating bond documents with 95% accuracy
-      - Developed the core Go REST API spanning 100+ endpoints with Redis caching, relationship-based auth, and audit logs
+      # - Innovating the surety industry with an AI-powered bond automation platform reducing the bond processing time by 90%
+      - Developed the core Go REST API spanning 100+ endpoints with Redis caching and Temporal workflow orchestration
+      - Built multi-stage RAG pipelines with cross-document context retrieval generating bond documents at 95% accuracy
       - Shipped a role-based frontend delivering distinct surety agent and contractor UX using Next.js, TypeScript, and tRPC
-      # - Architected an OpenTelemetry observability pipeline with end-to-end context propagation and tracing across services
+      - Architected an OpenTelemetry observability pipeline with end-to-end context propagation and tracing across services
   - position: Software Engineering Intern (Cloud Infrastructure)
     organization: UKG
     location: Atlanta, GA
@@ -62,33 +56,71 @@ work:
     startDate: 2024-06-01
     endDate: 2024-08-01
     highlights:
-      - Optimized global state management and client-side caching using TypeScript and Angular, reducing page latency by 40%
+      - Optimized global state management and client-side caching on Angular/TypeScript web app, reducing TTFB by 40%
       - Created multi-stage container build and release pipeline on GCP Cloud Build, improving deployment speed by 35%
 
 projects:
-  - name: "Macterm: MacOS Terminal Emulator with Persistent Multiplexing"
-    link: https://github.com/thdxg/macterm
-    highlights:
-      - Built a native macOS terminal with SwiftUI and libghostty, gaining 5K+ downloads and 16 contributors globally
-      - Implemented session persistence, declarative layout configuration, fuzzy command palette, and configurable hotkeys
-  - name: "Kubernetes Homelab"
-    link: https://github.com/thdxg/homelab
+  - name: "Kubernetes Homelab & Contribution"
+    link: https://headlamp.thdxg.dev
+    skills:
+      - Kubernetes
+      - Linux
+      - FluxCD
+      - Cilium
+      - Grafana
+      - OpenTelemetry
     highlights:
       - Designed a two-node Kubernetes cluster on Raspberry Pi, fully automating CI/CD via GitOps using FluxCD and sops
-      - Published personal projects and dashboards via Gateway API ingress with automatic TLS certificates and dynamic DNS
-      - Contributed to Kubernetes documentation on pod scheduling and eviction by synchronizing outdated Korean docs
-      - Contributed to Cilium CNI by tracing a runaway loop with livelock causing high CPU usage and silent traffic drops
+      - Deployed 20+ projects including personal website and Grafana dashboard via Gateway API ingress with dynamic DNS
+      - Authored the Korean Kubernetes documentation on pod scheduling and eviction as part of SIG Docs localization efforts
+  - name: "DooleyOnline: Emory Student Marketplace"
+    link: https://github.com/dooleyonline
+    skills:
+      - Go
+      - Next.js
+      - React
+      - TypeScript
+      - PostgreSQL
+      - GCP
+    highlights:
+      - Architected a Go REST API spanning item, chat, and user domains with sqlc queries, JWT auth, and email verification
+      - Implemented real-time buyer-seller chat over WebSockets with persisted message history and S3-backed image uploads
+      # - Containerized the API and web client with multi-stage Docker builds with automatic release on GCP Cloud Build
+  - name: "Macterm: MacOS Terminal Emulator with Persistent Multiplexing"
+    link: https://github.com/thdxg/macterm
+    skills:
+      - Swift
+      - SwiftUI
+    highlights:
+      - Built a native macOS terminal with SwiftUI and libghostty, gaining 6K+ downloads and 16 contributors globally
+      - Implemented session persistence, declarative layout configuration, fuzzy command palette, and configurable hotkeys
+  # - name: "Kubernetes Contributor"
+  #   link: https://github.com/kubernetes
+  #   skills:
+  #     - Go
+  #     - Kubernetes
+  #   highlights:
+  #     - Authored the Korean documentation of the pod scheduling/eviction concepts as part of SIG Docs localization efforts
+  #     - Discussed
   - name: "Spotify Warped: HCI Research & Publication"
     link: https://dl.acm.org/doi/10.1145/3772318.3790875
+    skills:
+      - Python
+      - d3.js
+      - React
     highlights:
       - Published to ACM CHI 2026 on how Spotify's algorithmic feedback loops shape listening behavior and data engagement
       - Built high-throughput data processing pipelines in Python to ingest 100 GB of Spotify streaming data from 60 users
-      # - Created interactive data visualization using d3.js and React to explore temporal and spatial patterns of listening behavior
-  - name: "Emory Hacks: Emory University's Hackathon Organization"
-    link: https://emoryhacks.com
-    highlights:
-      # - Attracted 300+ participants and \$20K+ sponsorship over 2 years as a co-founder and technology department lead
-      - Co-founded and developed annual hackathon website and registration system using Next.js, Spring Boot, and Firebase
+  # - Created interactive data visualization using d3.js and React to explore temporal and spatial patterns of listening behavior
+  # - name: "Emory Hacks: Emory University's Hackathon Organization"
+  #   link: https://emoryhacks.com
+  #   skills:
+  #     - Next.js
+  #     - Spring Boot
+  #     - Firebase
+  #   highlights:
+  #     - Attracted 300+ participants and \$20K+ sponsorship over 2 years as a co-founder and technology department lead
+  #     - Co-founded and developed annual hackathon website and registration system using Next.js, Spring Boot, and Firebase
   # - name: "Kubernetes Open-Source Contribution"
   #   startDate: 2026-01-01
   #   endDate: present
@@ -108,8 +140,9 @@ skills:
       - Rust
       - Python
       - SQL
-      - HTML
-      - CSS
+      - Swift
+      # - HTML
+      # - CSS
       - x86 Assembly
   - category: Technologies
     skills:
@@ -118,8 +151,9 @@ skills:
       - Docker
       - AWS
       - GCP
-      - Cloudflare
       - PostgreSQL
       - Redis
       - OpenTelemetry
       - Temporal
+      - Prometheus
+      - Grafana

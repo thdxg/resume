@@ -8,7 +8,8 @@ Declarative resume and cover letter built with Typst.
 
 ## Usage
 
-- Edit resume content in [resume.yaml](./resume.yaml).
+- Edit resume content in [resume.yaml](./resume.yaml). Each project accepts an
+  optional `skills` list, rendered next to the project name after a `|` divider.
 - Edit per-application cover letter variables (company, position, motivation)
   in [cover-letter.yaml](./cover-letter.yaml).
 - Edit the cover letter greeting and prose in
