@@ -1,4 +1,4 @@
-company: Protocol Nine
-position: Software Engineer Intern
+company: Google
+position: Software Engineering Intern
 motivation: |-
-  I'm drawn to Protocol Nine because you're asking for RAG systems that get evaluated, not just built, and that's the part I've actually done. At Huddle Surety I built a multi-stage RAG pipeline with cross-document retrieval that generates bond documents, where a plausible-sounding wrong answer is a legal problem rather than a bad demo — so most of the work was ingestion, retrieval quality, and knowing when the pipeline should decline to answer. Security analysis has the same property. I'm also interested in the agent-harness side of what you do: I built a Helix plugin that turns inline code comments into a store an agent reads and writes through a CLI, which is my own small attempt at keeping a human in the review loop. I'd want to spend the internship on retrieval evaluation, where "did this work" is measurable.
+  Last summer at UKG I built a Kubernetes CronJob validating TLS certificates across 200+ database and message-queue VMs in four datacenters, and a multi-cluster observability pipeline pulling telemetry from five clusters through a Go API. I run a two-node cluster at home on GitOps for the same reason — I like the class of problem where the failure is real and the fix has to survive the next one. Google is the place where that problem is hardest.

@@ -48,7 +48,7 @@ work:
     endDate: 2025-08-01
     highlights:
       - Implemented a Kubernetes CronJob that validates TLS certificates of 200+ production MongoDB, MySQL, and RabbitMQ VMs across 4 datacenters, removing manual healthchecks and accelerating the annual certificate renewal process
-      - Developed a multi-cluster Kubernetes network observability pipeline using OpenTelemetry, Prometheus, and Grafana, collecting telemetry from 5 clusters through a custom Go REST API to streamline infrastructure health monitoring
+      - Developed a multi-cluster Kubernetes network observability pipeline using OpenTelemetry, Prometheus, and Grafana, scatter-gathering telemetry across 5 clusters behind a unified Go REST API for centralized health monitoring
       - Provisioned Prometheus Blackbox Exporters across isolated OpenStack tenants to achieve distributed observability
   - position: Software Engineering Intern (Full Stack)
     organization: eStreamly
