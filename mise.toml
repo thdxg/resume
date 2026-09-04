@@ -1,65 +1,59 @@
-[tasks."compile:all"]
+[tasks.compile]
 description = "Compile resume and cover letter (pdf + png) in parallel"
 run = [
   { tasks = [
-    "compile resume pdf",
-    "compile resume png",
-    "compile cover-letter pdf",
-    "compile cover-letter png",
+    "compile:resume",
+    "compile:letter",
   ] },
 ]
 
-[tasks.compile]
-description = "Compile a document in the specified format (pdf, png)"
-sources = ["lib/**/*.typ", "docs/**/*.typ", "resume.yaml", "cover-letter.yaml"]
-usage = """
-arg "<document>" help="Document to compile" {
-  choices "resume" "cover-letter"
-}
-arg "<format>" help="Output format" {
-  choices "pdf" "png"
-}
-"""
+[tasks."compile:resume"]
+description = "Compile the resume (pdf + png)"
+sources = ["lib/**/*.typ", "docs/resume.typ", "resume.yaml"]
 run = """
 mkdir -p ./assets
-{% if usage.document == "resume" %}
-typst compile ./docs/resume.typ ./assets/Taehoon_Lee_resume.{{ usage.format }} --root .
-{% else %}
-typst compile ./docs/cover-letter.typ ./assets/cover-letter.{{ usage.format }} --root .
-{% endif %}
+typst compile ./docs/resume.typ ./assets/Taehoon_Lee_resume.pdf --root .
+typst compile ./docs/resume.typ ./assets/Taehoon_Lee_resume.png --root .
 """
 
-[tasks.preview]
-description = "Preview a document in browser (resume, cover-letter)"
-usage = """
-arg "<document>" help="Document to preview" {
-  choices "resume" "cover-letter"
-}
-"""
+[tasks."compile:letter"]
+description = "Compile the cover letter (pdf + png)"
+sources = ["lib/**/*.typ", "docs/cover-letter.typ", "resume.yaml", "cover-letter.yaml"]
 run = """
-{% if usage.document == "resume" %}
-tinymist preview ./docs/resume.typ --partial-rendering true --root .
-{% else %}
-tinymist preview ./docs/cover-letter.typ --partial-rendering true --root .
-{% endif %}
+mkdir -p ./assets
+typst compile ./docs/cover-letter.typ ./assets/cover-letter.pdf --root .
+typst compile ./docs/cover-letter.typ ./assets/cover-letter.png --root .
 """
 
-[tasks.print]
-description = "Print compiled image of a document (resume, cover-letter)"
-sources = ["lib/**/*.typ", "docs/**/*.typ", "resume.yaml", "cover-letter.yaml"]
-usage = """
-arg "<document>" help="Document to print" {
-  choices "resume" "cover-letter"
-}
-"""
-run = """
-{% if usage.document == "resume" %}
-mise run compile resume png
-clear
-chafa ./assets/Taehoon_Lee_resume.png --fit-width
-{% else %}
-mise run compile cover-letter png
-clear
-chafa ./assets/cover-letter.png --fit-width
-{% endif %}
-"""
+[tasks."preview:resume"]
+description = "Preview the resume in browser"
+run = "tinymist preview ./docs/resume.typ --partial-rendering true --root ."
+
+[tasks."preview:letter"]
+description = "Preview the cover letter in browser"
+run = "tinymist preview ./docs/cover-letter.typ --partial-rendering true --root ."
+
+[tasks."copy:letter"]
+description = "Copy the cover letter body to the clipboard as plain text"
+run = '''
+typst query ./docs/cover-letter.typ "par" --root . --field body | jq -r '
+# Flatten a Typst content tree into plain text.
+def totext:
+  if type == "array" then map(totext) | join("")
+  elif type != "object" then ""
+  elif .func == "text" then .text
+  elif .func == "smartquote" then (if .double then "\"" else "\u0027" end)
+  elif .func == "space" then " "
+  elif .func == "linebreak" then "\n"
+  elif .func == "sequence" then (.children | totext)
+  elif has("body") then (.body | totext)
+  else "" end;
+# Keep only the prose between the greeting and the sign-off.
+map(totext) as $p
+| ($p | map(startswith("Dear ")) | index(true)) as $i
+| ($p | map(startswith("Sincerely,")) | index(true)) as $j
+| if $i == null or $j == null
+  then error("could not locate the letter body between the greeting and sign-off")
+  else $p[$i + 1 : $j] | join("\n\n") end' | pbcopy
+echo "Copied cover letter body to clipboard."
+'''

@@ -1,4 +1,4 @@
-company: Google
-position: Software Engineering Intern
+company: Nera
+position: intern
 motivation: |-
-  Last summer at UKG I built a Kubernetes CronJob validating TLS certificates across 200+ database and message-queue VMs in four datacenters, and a multi-cluster observability pipeline pulling telemetry from five clusters through a Go API. I run a two-node cluster at home on GitOps for the same reason — I like the class of problem where the failure is real and the fix has to survive the next one. Google is the place where that problem is hardest.
+  I'm drawn to NERA because it turns my engineering toward a question I have never had to answer, which is whether the analysis itself holds up under cross-examination. Every layer of the stack taught me that correctness only becomes real when something depends on it, and here what depends on it is an expert report a court will pick apart. I want to be the person writing the code and building the quantitative models behind findings that have to survive that, and I would bring the same discipline I use on production systems to the data underneath them.
