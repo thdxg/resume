@@ -36,7 +36,7 @@
   ): it => block(width: 100%)[
     #v(uservars.sectionspacing)
     #set align(left)
-    #set text(font: uservars.headingfont, size: 1em, weight: "bold")
+    #set text(font: uservars.headingfont, size: 0.95em, weight: "bold")
     #upper(it.body)
     #v(-0.8em) #line(length: 100%, stroke: 1pt + black)
   ]
@@ -45,7 +45,7 @@
   show heading.where(
     level: 1,
   ): it => block(width: 100%)[
-    #set text(font: uservars.headingfont, size: 1.5em, weight: "bold")
+    #set text(font: uservars.headingfont, size: 1.4em, weight: "bold")
     #if (uservars.at("headingsmallcaps", default: false)) {
       smallcaps(it.body)
     } else {

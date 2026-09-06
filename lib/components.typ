@@ -119,7 +119,7 @@
           edu-items = edu-items.trim("\n")
         }
 
-        block(width: 100%, breakable: isbreakable, below: 1em)[
+        block(width: 100%, breakable: isbreakable, below: 0.9em)[
           #if ("url" in edu) and (edu.url != none) [
             *#link(edu.url)[#edu.institution]* #h(1fr) *#edu.location* \
           ] else [
@@ -140,7 +140,7 @@
     block[
       == #title
       #for w in info.work {
-        block(width: 100%, breakable: isbreakable, below: 1em)[
+        block(width: 100%, breakable: isbreakable, below: 0.9em)[
           *#w.position* #h(1fr) *#w.location* \
           #let start = utils.strpdate(w.startDate)
           #let end = utils.strpdate(w.endDate)
@@ -160,7 +160,7 @@
     block[
       == #title
       #for project in info.projects {
-        block(width: 100%, breakable: isbreakable, below: 1em)[
+        block(width: 100%, breakable: isbreakable, below: 0.9em)[
           *#project.name*#if ("skills" in project) and (project.skills != none) [
             #sym.bar.v #text(style: "italic")[#project.skills.join(", ")]
           ] #h(1fr) #box(link(project.link)[#project.link.split("//").at(1)]) \

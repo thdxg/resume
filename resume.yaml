@@ -8,57 +8,60 @@ personal:
       username: ethantlee
       url: https://linkedin.com/in/ethantlee
     - network: GitHub
-      username: ethn1ee
+      username: thdxg
       url: https://github.com/thdxg
 
 education:
   - institution: Carnegie Mellon University
-    area: Master of Software Engineering
+    area: Master of Software Engineering (4.0/4.0 GPA)
     startDate: 2026-08-01
     endDate: 2027-12-01
     location: Pittsburgh, PA
   - institution: Emory University
-    area: BS in Computer Science
+    area: BS in Computer Science (3.99/4.0 GPA, Magna Cum Laude, 5x Dean's List)
     startDate: 2023-08-01
     endDate: 2026-05-01
     location: Atlanta, GA
-    honors:
-      - 3.99/4.0 GPA
-      - Magna Cum Laude
-      - 2x James T Laney Scholarship
-      - 5x Dean's List
-      - Phi Beta Kappa Honor Society
+    # honors:
+    #   - 3.99/4.0 GPA
+    #   - Magna Cum Laude
+    # - 2x James T Laney Scholarship
+    #   - 5x Dean's List
+    #   - Emory Hacks co-founder
+    #   - Phi Beta Kappa Honor Society
 
 work:
   - position: Founding Software Engineer
-    organization: Huddle Surety
+    organization: Huddle Surety (Techstars Pre-Accelerator '26)
     location: Atlanta, GA
     startDate: 2025-09-01
     endDate: present
     highlights:
-      # - Innovating the surety industry with an AI-powered bond automation platform reducing the bond processing time by 90%
+      - Built an AI platform replacing manual surety bond processing at 10x speed, running 100+ bonds daily across 5 agencies
+      # - Innovating the surety industry by replacing manual bond processing with 10x faster AI-powered automation workflows
       - Developed the core Go REST API spanning 100+ endpoints with Redis caching and Temporal workflow orchestration
-      - Built multi-stage RAG pipelines with cross-document context retrieval generating bond documents at 95% accuracy
+      - Engineered multi-stage RAG pipelines with cross-document context retrieval generating bond forms at 95% accuracy
       - Shipped a role-based frontend delivering distinct surety agent and contractor UX using Next.js, TypeScript, and tRPC
-      - Architected an OpenTelemetry observability pipeline with end-to-end context propagation and tracing across services
+      - Architected end-to-end context propagation using OpenTelemetry, enabling per-client usage metrics and cost analysis
   - position: Software Engineering Intern (Cloud Infrastructure)
     organization: UKG
     location: Atlanta, GA
     startDate: 2025-05-01
     endDate: 2025-08-01
     highlights:
-      - Implemented a Kubernetes CronJob that validates TLS certificates of 200+ production MongoDB, MySQL, and RabbitMQ VMs across 4 datacenters, removing manual healthchecks and accelerating the annual certificate renewal process
-      - Developed a multi-cluster Kubernetes network observability pipeline using OpenTelemetry, Prometheus, and Grafana, scatter-gathering telemetry across 5 clusters behind a unified Go REST API for centralized health monitoring
-      - Provisioned Prometheus Blackbox Exporters across isolated OpenStack tenants to achieve distributed observability
+      - Automated infrastructure operations in a hybrid cloud environment spanning 4 on-prem datacenters and 3 GCP regions
+      - Built a TLS lifecycle monitor in Go, packaged as a Helm chart and scheduled as a Kubernetes CronJob, replacing manual healthchecks of 200+ OpenStack VMs during annual certificate renewal and reducing renewal time by 50%
+      - Partnered with Grafana Labs engineers to create database synthetic monitoring using Grafana K6 and Blackbox Exporters
+      - Developed a unified Go REST API to scatter-gather network metrics across 5 Kubernetes clusters using OpenTelemetry
   - position: Software Engineering Intern (Full Stack)
     organization: eStreamly
     location: Atlanta, GA
     startDate: 2024-06-01
     endDate: 2024-08-01
     highlights:
-      - Optimized global state management and client-side caching on Angular/TypeScript web app, reducing TTFB by 40%
-      - Created multi-stage container build and release pipeline on GCP Cloud Build, improving deployment speed by 35%
-
+      - Engineered frontend performance and deployment tooling for a shoppable livestream platform serving 100+ brands
+      - Built client-side caching and a reactive global state store in video engagement UI, cutting redundant API calls by 40%
+      - Created a multi-stage container build and release pipeline on GCP Cloud Build, improving deployment speed by 35%
 projects:
   - name: "Kubernetes Homelab & Contribution"
     link: https://headlamp.thdxg.dev
@@ -70,8 +73,8 @@ projects:
       - Grafana
       - OpenTelemetry
     highlights:
-      - Designed a two-node Kubernetes cluster on Raspberry Pi, fully automating CI/CD via GitOps using FluxCD and sops
-      - Deployed 20+ projects including personal website and Grafana dashboard via Gateway API ingress with dynamic DNS
+      - Designed a two-node Kubernetes cluster on Raspberry Pi serving 20+ projects including personal website and dashboards
+      - Automated CI/CD using FluxCD and provisioned public ingress using Cilium CNI, Gateway API, and dynamic DNS
       - Authored the Korean Kubernetes documentation on pod scheduling and eviction as part of SIG Docs localization efforts
   - name: "DooleyOnline: Emory Student Marketplace"
     link: https://github.com/dooleyonline
@@ -81,18 +84,20 @@ projects:
       - React
       - TypeScript
       - PostgreSQL
-      - GCP
+      - AWS
     highlights:
-      - Architected a Go REST API spanning item, chat, and user domains with sqlc queries, JWT auth, and email verification
+      - Launched an online marketplace for Emory students to exchange secondhand items, reaching 150 users on campus
       - Implemented real-time buyer-seller chat over WebSockets with persisted message history and S3-backed image uploads
+      # - Architected a Go REST API spanning item, chat, and user domains with sqlc queries, JWT auth, and email verification
       # - Containerized the API and web client with multi-stage Docker builds with automatic release on GCP Cloud Build
-  - name: "Macterm: MacOS Terminal Emulator with Persistent Multiplexing"
+  - name: "Macterm: Terminal Emulator with Persistent Multiplexing"
     link: https://github.com/thdxg/macterm
     skills:
       - Swift
       - SwiftUI
+      - C
     highlights:
-      - Built a native macOS terminal with SwiftUI and libghostty, gaining 6K+ downloads and 20 contributors globally
+      - Built a native macOS terminal with SwiftUI and libghostty, gaining 6K+ downloads and 20 open-source contributors
       - Implemented session persistence, declarative layout configuration, fuzzy command palette, and configurable hotkeys
   # - name: "Kubernetes Contributor"
   #   link: https://github.com/kubernetes
@@ -106,11 +111,11 @@ projects:
     link: https://dl.acm.org/doi/10.1145/3772318.3790875
     skills:
       - Python
-      - d3.js
+      - JavaScript
       - React
     highlights:
       - Published to ACM CHI 2026 on how Spotify's algorithmic feedback loops shape listening behavior and data engagement
-      - Built high-throughput data processing pipelines in Python to ingest 100 GB of Spotify streaming data from 60 users
+      - Created high-throughput data processing pipelines in Python to ingest 100 GB of Spotify streaming data from 60 users
   # - Created interactive data visualization using d3.js and React to explore temporal and spatial patterns of listening behavior
   # - name: "Emory Hacks: Emory University's Hackathon Organization"
   #   link: https://emoryhacks.com
@@ -120,7 +125,7 @@ projects:
   #     - Firebase
   #   highlights:
   #     - Attracted 300+ participants and \$20K+ sponsorship over 2 years as a co-founder and technology department lead
-  #     - Co-founded and developed annual hackathon website and registration system using Next.js, Spring Boot, and Firebase
+  # - Co-founded and developed annual hackathon website and registration system using Next.js, Spring Boot, and Firebase
   # - name: "Kubernetes Open-Source Contribution"
   #   startDate: 2026-01-01
   #   endDate: present
