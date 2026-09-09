@@ -18,7 +18,7 @@ education:
     endDate: 2027-12-01
     location: Pittsburgh, PA
   - institution: Emory University
-    area: BS in Computer Science (3.99/4.0 GPA, Magna Cum Laude, 5x Dean's List)
+    area: BS in Computer Science (4.0/4.0 GPA, Summa Cum Laude, 5x Dean's List)
     startDate: 2023-08-01
     endDate: 2026-05-01
     location: Atlanta, GA
@@ -37,9 +37,8 @@ work:
     startDate: 2025-09-01
     endDate: present
     highlights:
-      - Built an AI platform replacing manual surety bond processing at 10x speed, running 100+ bonds daily across 5 agencies
-      # - Innovating the surety industry by replacing manual bond processing with 10x faster AI-powered automation workflows
-      - Developed the core Go REST API spanning 100+ endpoints with Redis caching and Temporal workflow orchestration
+      - Launched an AI platform replacing manual surety processing at 10x speed, running 100+ bonds daily across 5 agencies
+      - Developed the core Go REST API spanning 200+ endpoints with Redis caching and Temporal workflow orchestration
       - Engineered multi-stage RAG pipelines with cross-document context retrieval generating bond forms at 95% accuracy
       - Shipped a role-based frontend delivering distinct surety agent and contractor UX using Next.js, TypeScript, and tRPC
       - Architected end-to-end context propagation using OpenTelemetry, enabling per-client usage metrics and cost analysis

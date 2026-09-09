@@ -49,7 +49,9 @@ Since choosing software engineering as my career, I have been searching for my n
 
 I've journeyed through the modern technology stack from top to bottom; I can build the frontend, backend, and the infrastructure to run them on. Counterproductively to my niche-searching, there wasn't a part that I didn't enjoy learning or building. Each layer of the stack came with different problems but taught the same lesson: there's always more than what I know. In today's world, maybe what I need is the passion and vision, not a niche.
 
-#letter.motivation
+#if (letter.motivation.len() > 0) {
+  letter.motivation
+}
 
 I distinguish myself as a disciplined and curious learner with a breadth of engineering experience. Being a #letter.position at #letter.company is an opportunity that I am ready to make the most out of, and I hope my qualities include what you are looking for.
 
