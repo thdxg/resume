@@ -17,31 +17,34 @@ education:
     startDate: 2026-08-01
     endDate: 2027-12-01
     location: Pittsburgh, PA
+    courses:
+      - Distributed Systems
+      - Operating Systems
+      - Cloud Computing
+      - System Design
   - institution: Emory University
-    area: BS in Computer Science (4.0/4.0 GPA, Summa Cum Laude, 5x Dean's List)
+    area: BS in Computer Science (3.99/4.0 GPA, Magna Cum Laude, 5x Dean's List)
     startDate: 2023-08-01
     endDate: 2026-05-01
     location: Atlanta, GA
-    # honors:
-    #   - 3.99/4.0 GPA
-    #   - Magna Cum Laude
-    # - 2x James T Laney Scholarship
-    #   - 5x Dean's List
-    #   - Emory Hacks co-founder
-    #   - Phi Beta Kappa Honor Society
+    courses:
+      - Data Structures & Algorithms
+      - Computer Architecture
+      - Databases
+      - Object-oriented Programming
 
 work:
-  - position: Founding Software Engineer
-    organization: Huddle Surety (Techstars Pre-Accelerator '26)
+  - position: Software Engineer
+    organization: Huddle Surety
     location: Atlanta, GA
     startDate: 2025-09-01
     endDate: present
     highlights:
-      - Launched an AI platform replacing manual surety processing at 10x speed, running 100+ bonds daily across 5 agencies
-      - Developed the core Go REST API spanning 200+ endpoints with Redis caching and Temporal workflow orchestration
-      - Engineered multi-stage RAG pipelines with cross-document context retrieval generating bond forms at 95% accuracy
-      - Shipped a role-based frontend delivering distinct surety agent and contractor UX using Next.js, TypeScript, and tRPC
-      - Architected end-to-end context propagation using OpenTelemetry, enabling per-client usage metrics and cost analysis
+      - Built an AI platform replacing manual surety bond processing at 10x speed, running 100+ bonds daily across 5 agencies
+      - Designed and developed the core Go REST API spanning 100+ endpoints with Redis caching and Temporal orchestration
+      - Engineered Python LLM retrieval (RAG) pipelines with cross-document context, generating bond forms at 95% accuracy
+      - Shipped a role-based web frontend delivering distinct surety agent and contractor UX in React, Next.js, and TypeScript
+      - Architected end-to-end distributed tracing with OpenTelemetry, enabling per-client usage metrics and cost analysis
   - position: Software Engineering Intern (Cloud Infrastructure)
     organization: UKG
     location: Atlanta, GA
@@ -49,32 +52,39 @@ work:
     endDate: 2025-08-01
     highlights:
       - Automated infrastructure operations in a hybrid cloud environment spanning 4 on-prem datacenters and 3 GCP regions
-      - Built a TLS lifecycle monitor in Go, packaged as a Helm chart and scheduled as a Kubernetes CronJob, replacing manual healthchecks of 200+ OpenStack VMs during annual certificate renewal and reducing renewal time by 50%
-      - Partnered with Grafana Labs engineers to create database synthetic monitoring using Grafana K6 and Blackbox Exporters
-      - Developed a unified Go REST API to scatter-gather network metrics across 5 Kubernetes clusters using OpenTelemetry
+      - Built a TLS certificate lifecycle monitor in Go, packaged as a Helm chart and scheduled as a Kubernetes CronJob, replacing manual healthchecks of 200+ Linux VMs and cutting annual certificate renewal time by 50%
+      - Partnered with Grafana Labs engineers to build database synthetic monitoring using Grafana K6 and Blackbox Exporters
+      - Developed a Go REST API using concurrent scatter-gather to aggregate network metrics across 5 Kubernetes clusters
   - position: Software Engineering Intern (Full Stack)
     organization: eStreamly
     location: Atlanta, GA
     startDate: 2024-06-01
     endDate: 2024-08-01
     highlights:
-      - Engineered frontend performance and deployment tooling for a shoppable livestream platform serving 100+ brands
-      - Built client-side caching and a reactive global state store in video engagement UI, cutting redundant API calls by 40%
-      - Created a multi-stage container build and release pipeline on GCP Cloud Build, improving deployment speed by 35%
+      - Cut redundant API calls by 40% with client-side caching and reactive state store in livestream shopping platform video UI
+      - Created a multi-stage Docker build and CI/CD release pipeline on GCP Cloud Build, improving deployment speed by 35%
+
 projects:
   - name: "Kubernetes Homelab & Contribution"
     link: https://headlamp.thdxg.dev
     skills:
       - Kubernetes
       - Linux
-      - FluxCD
-      - Cilium
-      - Grafana
-      - OpenTelemetry
+      - Operating System
+      - CI/CD
     highlights:
-      - Designed a two-node Kubernetes cluster on Raspberry Pi serving 20+ projects including personal website and dashboards
-      - Automated CI/CD using FluxCD and provisioned public ingress using Cilium CNI, Gateway API, and dynamic DNS
-      - Authored the Korean Kubernetes documentation on pod scheduling and eviction as part of SIG Docs localization efforts
+      - Operated a Kubernetes cluster on 2 Raspberry Pi Linux nodes, serving 20+ projects including personal website
+      - Automated GitOps CI/CD and provisioned public ingress using Cilium container networking interface and Gateway API
+      - Contributed upstream to Kubernetes as a SIG Docs member, authoring Korean documentation on scheduling and eviction
+  - name: "Macterm: Terminal Emulator with Persistent Multiplexing"
+    link: https://github.com/thdxg/macterm
+    skills:
+      - Swift
+      - SwiftUI
+      - C
+    highlights:
+      - Built and maintain a native macOS terminal in Swift and C, with 7K+ downloads and 20 global open-source contributors
+      - Implemented session persistence, declarative layout configuration, fuzzy command palette, and configurable hotkeys
   - name: "DooleyOnline: Emory Student Marketplace"
     link: https://github.com/dooleyonline
     skills:
@@ -85,27 +95,8 @@ projects:
       - PostgreSQL
       - AWS
     highlights:
-      - Launched an online marketplace for Emory students to exchange secondhand items, reaching 150 users on campus
+      - Launched a campus marketplace of 150+ users with a Go, PostgreSQL backend and Next.js, TypeScript, React frontend
       - Implemented real-time buyer-seller chat over WebSockets with persisted message history and S3-backed image uploads
-      # - Architected a Go REST API spanning item, chat, and user domains with sqlc queries, JWT auth, and email verification
-      # - Containerized the API and web client with multi-stage Docker builds with automatic release on GCP Cloud Build
-  - name: "Macterm: Terminal Emulator with Persistent Multiplexing"
-    link: https://github.com/thdxg/macterm
-    skills:
-      - Swift
-      - SwiftUI
-      - C
-    highlights:
-      - Built a native macOS terminal with SwiftUI and libghostty, gaining 6K+ downloads and 20 open-source contributors
-      - Implemented session persistence, declarative layout configuration, fuzzy command palette, and configurable hotkeys
-  # - name: "Kubernetes Contributor"
-  #   link: https://github.com/kubernetes
-  #   skills:
-  #     - Go
-  #     - Kubernetes
-  #   highlights:
-  #     - Authored the Korean documentation of the pod scheduling/eviction concepts as part of SIG Docs localization efforts
-  #     - Discussed
   - name: "Spotify Warped: HCI Research & Publication"
     link: https://dl.acm.org/doi/10.1145/3772318.3790875
     skills:
@@ -113,51 +104,32 @@ projects:
       - JavaScript
       - React
     highlights:
-      - Published to ACM CHI 2026 on how Spotify's algorithmic feedback loops shape listening behavior and data engagement
-      - Created high-throughput data processing pipelines in Python to ingest 100 GB of Spotify streaming data from 60 users
-  # - Created interactive data visualization using d3.js and React to explore temporal and spatial patterns of listening behavior
-  # - name: "Emory Hacks: Emory University's Hackathon Organization"
-  #   link: https://emoryhacks.com
-  #   skills:
-  #     - Next.js
-  #     - Spring Boot
-  #     - Firebase
-  #   highlights:
-  #     - Attracted 300+ participants and \$20K+ sponsorship over 2 years as a co-founder and technology department lead
-  # - Co-founded and developed annual hackathon website and registration system using Next.js, Spring Boot, and Firebase
-  # - name: "Kubernetes Open-Source Contribution"
-  #   startDate: 2026-01-01
-  #   endDate: present
-  #   link: https://kubernetes.io
-  #   highlights:
-  #     - Contributed to Kubernetes open-source project as an active member of the SIG Docs, specializing in internationalization
-  #     - Localized documentation on Kubernetes scheduler concepts, ensuring terminology accuracy and clarity for Korean audiences
+      - Published at ACM CHI 2026 on Spotify's algorithmic feedback loops, building Python pipelines over 100 GB of user data
 
 skills:
   - category: Languages
     skills:
       - Go
+      - Python
       - TypeScript
-      - JavaScript
       - Java
       - C
+      - JavaScript
       - Rust
-      - Python
       - SQL
       - Swift
-      # - HTML
-      # - CSS
       - x86 Assembly
   - category: Technologies
     skills:
       - Kubernetes
-      - Linux
       - Docker
+      - Linux
       - AWS
       - GCP
       - PostgreSQL
       - Redis
+      - Git
+      - Helm
       - OpenTelemetry
-      - Temporal
       - Prometheus
       - Grafana

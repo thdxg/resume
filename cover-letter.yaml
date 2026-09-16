@@ -1,5 +1,4 @@
-company: Naive
-position: Software Engineering Intern
+company: Amperesand
+position: Software Intern
 motivation: |-
-#   asdf
-
+  I'm drawn to Amperesand because the software spans the same distance I've been walking, from real-time control close to the hardware up to the dashboards an operator reads to understand what the hardware just did. My breadth has always felt like indecision, but this is a team where the frontend engineer and the firmware engineer have to agree on what a number means, and I've spent the last year building the observability layer that makes that agreement possible. I want to work where the system I'm instrumenting is a physical one and a wrong reading has consequences beyond a dashboard. Being in the lab five days a week is part of the appeal, since I learn fastest when I can see the thing I'm writing software for.

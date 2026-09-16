@@ -64,7 +64,7 @@
     size: uservars.fontsize * 1,
   )
   #pad(x: 0em)[
-    #profiles.join([#sym.space #sym.dot #sym.space])
+    #profiles.join([#sym.space #sym.bar.v #sym.space])
   ]
 ]
 
