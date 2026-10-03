@@ -15,7 +15,7 @@ education:
   - institution: Carnegie Mellon University
     area: Master of Software Engineering (4.0/4.0 GPA)
     startDate: 2026-08-01
-    endDate: 2027-12-01
+    endDate: 2028-12-01
     location: Pittsburgh, PA
     courses:
       - Distributed Systems
@@ -23,7 +23,7 @@ education:
       - Cloud Computing
       - System Design
   - institution: Emory University
-    area: BS in Computer Science (4.0/4.0 GPA, Summa Cum Laude, 5x Dean's List)
+    area: BS in Computer Science (3.99/4.0 GPA, Magna Cum Laude, 5x Dean's List)
     startDate: 2023-08-01
     endDate: 2026-05-01
     location: Atlanta, GA
@@ -34,18 +34,25 @@ education:
       - Object-oriented Programming
 
 work:
-  - position: Software Engineer
+  - position: Software Engineering Intern
+    organization: Tesla
+    location: Fremont, CA
+    startDate: 2027-01-11
+    endDate: 2027-05-21
+    highlights:
+      - Incoming intern in the platform team, building scalable observability pipelines for Kubernetes fleets
+  - position: Founding Software Engineer
     organization: Huddle Surety
     location: Atlanta, GA
     startDate: 2025-09-01
-    endDate: present
+    endDate: 2027-01-01
     highlights:
       - Built an AI platform replacing manual surety bond processing at 10x speed, running 100+ bonds daily across 5 agencies
       - Designed and developed the core Go REST API spanning 100+ endpoints with Redis caching and Temporal orchestration
       - Engineered Python LLM retrieval (RAG) pipelines with cross-document context, generating bond forms at 95% accuracy
       - Shipped a role-based web frontend delivering distinct surety agent and contractor UX in React, Next.js, and TypeScript
       - Architected end-to-end distributed tracing with OpenTelemetry, enabling per-client usage metrics and cost analysis
-  - position: Software Engineering Intern (Cloud Infrastructure)
+  - position: Software Engineering Intern
     organization: UKG
     location: Atlanta, GA
     startDate: 2025-05-01
@@ -54,8 +61,8 @@ work:
       - Automated infrastructure operations in a hybrid cloud environment spanning 4 on-prem datacenters and 3 GCP regions
       - Built a TLS certificate lifecycle monitor in Go, packaged as a Helm chart and scheduled as a Kubernetes CronJob, replacing manual healthchecks of 200+ Linux VMs and cutting annual certificate renewal time by 50%
       - Partnered with Grafana Labs engineers to build database synthetic monitoring using Grafana K6 and Blackbox Exporters
-      - Developed a Go REST API using concurrent scatter-gather to aggregate network metrics across 5 Kubernetes clusters
-  - position: Software Engineering Intern (Full Stack)
+      # - Developed a Go REST API using concurrent scatter-gather to aggregate network metrics across 5 Kubernetes clusters
+  - position: Software Engineering Intern
     organization: eStreamly
     location: Atlanta, GA
     startDate: 2024-06-01
@@ -97,14 +104,14 @@ projects:
     highlights:
       - Launched a campus marketplace of 150+ users with a Go, PostgreSQL backend and Next.js, TypeScript, React frontend
       - Implemented real-time buyer-seller chat over WebSockets with persisted message history and S3-backed image uploads
-  - name: "Spotify Warped: HCI Research & Publication"
-    link: https://dl.acm.org/doi/10.1145/3772318.3790875
-    skills:
-      - Python
-      - JavaScript
-      - React
-    highlights:
-      - Published at ACM CHI 2026 on Spotify's algorithmic feedback loops, building Python pipelines over 100 GB of user data
+  # - name: "Spotify Warped: HCI Research & Publication"
+  #   link: https://dl.acm.org/doi/10.1145/3772318.3790875
+  #   skills:
+  #     - Python
+  #     - JavaScript
+  #     - React
+  #   highlights:
+  #     - Published at ACM CHI 2026 on Spotify's algorithmic feedback loops, building Python pipelines over 100 GB of user data
 
 skills:
   - category: Languages

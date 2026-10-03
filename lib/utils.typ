@@ -32,11 +32,11 @@
     let day = int(isodate.slice(8, 10))
     let monthName = monthname(month, display: "short")
     date = datetime(year: year, month: month, day: day)
-    let is-future = date > datetime.today()
+    // let is-future = date > datetime.today()
     date = monthName + " " + date.display("[year repr:full]")
-    if is-future {
-      date = "Expected " + date
-    }
+    // if is-future {
+    //   date = "Expected " + date
+    // }
   } else if lower(isodate) == "present" {
     date = "Present"
   }
