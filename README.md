@@ -1,6 +1,6 @@
 # Resume
 
-Declarative resume built with Typst. Clean, customizable, and ATS-friendly.
+Declarative resume built with Typst. Customizable and ATS-friendly.
 
 ## Preview
 
