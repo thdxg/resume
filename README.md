@@ -1,8 +1,6 @@
 # Resume
 
-Declarative resume built with Typst. The cover letter lives in the sibling
-`../cover-letter` directory and reuses this project's `lib/` theme and
-`resume.yaml` contact info.
+Declarative resume built with Typst. Clean, customizable, and ATS-friendly.
 
 ## Preview
 
