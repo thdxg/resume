@@ -1,7 +1,7 @@
 // CV content components. Each renders a section from the YAML data (`info`)
 // using `uservars` for styling. Generic page/heading theming lives in
 // `/lib/theme.typ`; date helpers in `/lib/utils.typ`.
-#import "/lib/utils.typ"
+#import "utils.typ"
 
 // Job titles
 #let jobtitletext(info, uservars) = {
