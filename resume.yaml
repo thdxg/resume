@@ -84,14 +84,14 @@ projects:
       - Automated GitOps CI/CD and provisioned public ingress using Cilium container networking interface and Gateway API
       - Contributed upstream to Kubernetes as a SIG Docs member, authoring Korean documentation on scheduling and eviction
   - name: "Macterm: Terminal Emulator with Persistent Multiplexing"
-    link: https://github.com/thdxg/macterm
+    link: https://macterm.thdxg.dev
     skills:
       - Swift
       - SwiftUI
       - C
     highlights:
-      - Built and maintain a native macOS terminal in Swift and C, with 8K+ downloads and 20 global open-source contributors
-      - Implemented session persistence, declarative layout configuration, fuzzy command palette, and configurable hotkeys
+      - Led development of an open-source macOS terminal emulator with 20 global contributors and 10K+ downloads
+      - Implemented session persistence, declarative layout, fuzzy command palette, password manager, and extension system
   - name: "DooleyOnline: Emory Student Marketplace"
     link: https://github.com/dooleyonline
     skills:
